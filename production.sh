@@ -34,23 +34,22 @@ DB_PATH="source/database"
 DB_FILE="$DB_PATH/database.sqlite"
 # Buat direktori database jika belum ada
 if [ ! -d "$DB_PATH" ]; then
-    mkdir -p "$DB_PATH"
+    sudo mkdir -p "$DB_PATH"
 fi
 # Buat file database.sqlite jika belum ada
 if [ ! -f "$DB_FILE" ]; then
-    touch "$DB_FILE"
+    sudo touch "$DB_FILE"
 fi
 # Set izin dan kepemilikan
-chown -R nobody:nogroup $DB_PATH
-chmod -R 775 $DB_PATH
+sudo chown -R nobody:nogroup $DB_PATH
+sudo chmod -R 775 $DB_PATH
 # Pull from the repository
 ######################################
-#eval $(ssh-agent)
-#sudo -E ssh-add ~/.ssh/vps_gio_eds
+eval $(ssh-agent)
+sudo -E ssh-add ~/.ssh/vps_gio_eds
 # Membatalkan semua perubahan lokal dan mengembalikan ke commit terakhir dari remote
-#sudo git reset --hard
+sudo git reset --hard
 # Lakukan git pull untuk menarik perubahan dari remote repository
-#git pull
 
 
 ######################################
