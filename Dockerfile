@@ -30,16 +30,6 @@ COPY --chown=nobody:nobody source/ /var/www/html/
 # Composer install
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 
-# Configure Nginx
-COPY config/nginx.conf /etc/nginx/nginx.conf
-
-# Configure PHP-FPM
-COPY config/php-fpm.conf /etc/php83/php-fpm.conf
-COPY config/php.ini /etc/php83/conf.d/custom.ini
-
-# Configure Supervisor
-COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-
 # Set permissions
 RUN chown -R nobody:nobody /var/www/html /run
 
