@@ -27,6 +27,22 @@ sudo mkdir -p /var/www/html/storage/logs
 sudo chown -R nobody:nogroup /var/www/html/storage/logs
 sudo chmod -R 775 /var/www/html/storage/logs
 
+# SQLite Database Setup
+######################################
+# Pastikan direktori dan file database ada
+DB_PATH="source/database"
+DB_FILE="$DB_PATH/database.sqlite"
+# Buat direktori database jika belum ada
+if [ ! -d "$DB_PATH" ]; then
+    mkdir -p "$DB_PATH"
+fi
+# Buat file database.sqlite jika belum ada
+if [ ! -f "$DB_FILE" ]; then
+    touch "$DB_FILE"
+fi
+# Set izin dan kepemilikan
+chown -R nobody:nogroup $DB_PATH
+chmod -R 775 $DB_PATH
 # Pull from the repository
 ######################################
 #eval $(ssh-agent)
