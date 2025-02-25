@@ -53,16 +53,34 @@ RUN ln -s /usr/bin/php83 /usr/bin/php
 # Composer install
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 
-# Set permissions
-RUN chown -R nobody:nobody /var/www/html /run
+# Configure PHP-FPM
+ENV PHP_INI_DIR=/etc/php83
+COPY config/php.ini ${PHP_INI_DIR}/conf.d/custom.ini
+
+# Configure supervisord
+RUN apk add --no-cache supervisor
+COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+# Set up directory permissions
+RUN mkdir -p /var/www/html /run && \
+    chown -R nobody:nobody /var/www/html /run && \
+    # Create Composer cache directory with correct permissions
+    mkdir -p /.composer/cache && \
+    chown -R nobody:nobody /.composer
+
+# Copy application files
+COPY --chown=nobody:nobody source/ /var/www/html/
 
 # Switch to non-root user
 USER nobody
 
+# Install dependencies
+RUN composer install --optimize-autoloader --no-interaction --no-progress
+
 # Expose port
 EXPOSE 8080
 
-# Start Supervisor
+# Start supervisord
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
 
 # Healthcheck
