@@ -11,7 +11,6 @@ sudo chown -R $CURRENT_USER:$CURRENT_GROUP source/bootstrap
 sudo chown -R $CURRENT_USER:$CURRENT_GROUP source/config
 sudo chown -R $CURRENT_USER:$CURRENT_GROUP source/public
 sudo chown -R $CURRENT_USER:$CURRENT_GROUP source/resources
-sudo chown -R $CURRENT_USER:$CURRENT_GROUP source/resources/lang
 sudo chown -R $CURRENT_USER:$CURRENT_GROUP source/routes
 
 # Database migrations
@@ -31,8 +30,10 @@ sudo chmod -R 775 /var/www/html/storage/logs
 # Pull from the repository
 ######################################
 eval $(ssh-agent)
-
-ssh-add /home/veldora/.ssh/github_eraya_digital
+sudo -E ssh-add ~/.ssh/vps_gio_eds
+# Membatalkan semua perubahan lokal dan mengembalikan ke commit terakhir dari remote
+sudo git reset --hard
+# Lakukan git pull untuk menarik perubahan dari remote repository
 git pull
 
 
