@@ -6,13 +6,14 @@ services:
     ports:
       - target: 8080
         published: 10160
+        protocol: tcp
         mode: ingress
-    environment:
+    volumes:
       - ./source/storage/:/var/www/html/storage/
-    # Limit default logging container
+    environment:
+      # Add your environment variables here if needed
     logging:
       driver: "json-file"
       options:
         max-size: "100k"
         max-file: "10"
-        mode: non-blocking
