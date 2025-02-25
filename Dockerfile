@@ -27,6 +27,9 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Copy application files
 COPY --chown=nobody:nobody source/ /var/www/html/
 
+# Create symbolic link for php
+RUN ln -s /usr/bin/php83 /usr/bin/php
+
 # Composer install
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 
