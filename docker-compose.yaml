@@ -5,7 +5,7 @@ services:
     image: company_profile:1.0.0
     ports:
       - target: 8080
-        published: 9090
+        published: 11100
         mode: ingress
     environment:
       - ./source/storage/:/var/www/html/storage/

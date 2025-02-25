@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" data-theme="light">
 <head>
     @include('includes.assetsheader')
     @yield('css_load')

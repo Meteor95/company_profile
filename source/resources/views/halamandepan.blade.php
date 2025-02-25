@@ -1,578 +1,1241 @@
 @extends('templatebody')
 @section('konten_utama')
-  <!--==============================
-    Mobile Menu
-  ============================== -->
-    <div class="vs-menu-wrapper">
-        <div class="vs-menu-area text-center">
-            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
-            <div class="mobile-logo">
-                <a href="{{ url('/') }}"><img src="{{ asset('canvas/assets/img/logo.png') }}" alt="Eraya Digital Solusindo" class="logo"></a>
-            </div>
-            <div class="vs-mobile-menu">
-                <ul>
-                    <li class="">
-                        <a href="{{ url('/') }}">Beranda</a>
-                    </li>
-                    <li>
-                        <a href="/about">Forums</a>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="/blog">Services</a>
-                        <ul class="sub-menu">
-                            <li><a href="/blog">Eraya Digital</a></li>
-                            <li><a href="/blog-grid">Eraya Accounting</a></li>
-                        </ul>
-                    </li>
-                </ul>
+<!--==============================
+Mobile Menu
+============================== -->
+<div class="vs-menu-wrapper">
+    <div class="vs-menu-area text-center">
+        <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+        <div class="mobile-logo">
+            <a href="{{ url('') }}"><img src="{{ asset('template_v1/img/logo/logo_eds_color.png') }}" alt="Logo Eraya Digital Solusindo"></a>
+        </div>
+        <div class="vs-mobile-menu">
+            <ul>
+                <li>
+                    <a href="{{ url('') }}">Beranda</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">Forum</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="javascript:void(0)">Layanan</a>
+                    <ul class="sub-menu">
+                        <li><a href="javascript:void(0)">Pengembangan Aplikasi</a></li>
+                        <li><a href="javascript:void(0)">Konsultasi Pajak dan Akuntansi</a></li>
+                        <li><a href="javascript:void(0)">Konsultasi Perangkat Keras atau Lunak</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">Hubungi Kami</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--==============================
+    Preloader
+==============================-->
+<div class="preloader">
+    <button class="vs-btn preloaderCls">Tampilkan Website Sekarang</button>
+    <div class="preloader-inner text-center">
+        <img src="{{ asset('template_v1/img/logo/logo_eds_color.png') }}" alt="Logo Eraya Digital Solusindo">
+        <span class="loader"></span>
+    </div>
+</div>
+<!--==============================
+Sidemenu
+============================== -->
+<div class="sidemenu-wrapper d-none d-lg-block">
+    <div class="sidemenu-content">
+        <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+        <div class="widget  ">
+            <div class="vs-widget-about">
+                <div class="footer-logo">
+                <a href="{{ url('') }}"><img src="{{ asset('template_v1/img/logo/logo_eds_color.png') }}" alt="Logo Eraya Digital Solusindo"></a>
+                </div>
+                <p class="footer-text" style="text-align:justify">Didirikan pada tahun 2024, kami adalah software house profesional yang berpengalaman dalam menyediakan solusi Digital dan TI untuk berbagai organisasi. Kami telah melayani banyak klien di seluruh Indonesia, mulai dari UKM, perusahaan besar, hingga instansi pemerintah. Dengan semangat dan ketajaman intuisi, kami membantu pertumbuhan bisnis secara optimal dan berkelanjutan.</p>
+                <div class="info-social style3">
+                    <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="icon-btn" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="icon-btn" href="#"><i class="fab fa-google"></i></a>
+                </div>
             </div>
         </div>
     </div>
-    <!--==============================
-        Header Area
-    ==============================-->
-    <header class="vs-header header-layout1">
-        <!-- Header Top -->
-        <div class="header-top">
-            <div class="container">
-                <div class="row align-items-center justify-content-between gy-1 text-center text-lg-start">
-                    <div class="col-lg-auto d-none d-lg-block">
-                        <p class="header-text"><span class="fw-medium">Join Us :</span> Interested in joining us ? <a style="text-decoration: none;color: white;" href="javascript:void(0)">COME ON OVER!!!</a></p>
-                    </div>
-                    <div class="col-lg-auto">
-                        <div class="header-social style-white">
-                            <span class="social-title">Follow Us On: </span>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-behance"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+</div>
+<!--==============================
+Header Area
+==============================-->
+<header class="vs-header header-layout2">
+    <div class="header-top">
         <div class="container">
-            <div class="menu-top">
-                <div class="row justify-content-between align-items-center gx-sm-0">
-                    <div class="col">
-                        <div class="header-logo">
-                            <a href="/"><img src="{{ asset('canvas/assets/img/logo.png') }}" alt="TechBiz" class="logo"></a>
-                        </div>
-                    </div>
-                    <div class="col-auto header-info ">
-                        <div class="header-info_icon"><i class="fas fa-phone-alt"></i></div>
-                        <div class="media-body">
-                            <span class="header-info_label">Call Anytime 24/7</span>
-                            <div class="header-info_link"><a href="tel:+6282257808535">(+62) 82-257-808-535</a></div>
-                        </div>
-                    </div>
-                    <div class="col-auto header-info d-none d-lg-flex">
-                        <div class="header-info_icon"><i class="fas fa-envelope"></i></div>
-                        <div class="media-body">
-                            <span class="header-info_label">Mail Us For Support</span>
-                            <div class="header-info_link"><a href="mailto:hallo@erayadigital.co.id">hallo@erayadigital.co.id</a></div>
-                        </div>
-                    </div>
-                    <div class="col-auto header-info d-none d-xl-flex">
-                        <div class="header-info_icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="media-body">
-                            <span class="header-info_label">Head office address</span>
-                            <div class="header-info_link">Jakarta, Indonesia</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Main Menu Area -->
-        <div class="sticky-wrapper">
-            <div class="sticky-active">
-                <div class="container">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-auto">
-                            <nav class="main-menu menu-style1 d-none d-lg-block">
-                                <ul>
-                                    <li><a href="{{ url('/') }}"><span class="has-new-lable">Dashboard</span></a></li>
-                                    <li><a href="/about">Forums</a></li>
-                                    <li class="menu-item-has-children">
-                                        <a href="javascript:void(0)">Services</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="javascript:void(0)">Eraya Digital</a></li>
-                                            <li><a href="javascript:void(0)">Eraya Accounting</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <button class="vs-menu-toggle d-inline-block d-lg-none"><i class="fal fa-bars"></i></button>
-                        </div>
-                        <div class="col-auto ">
-                            <button class="btn btn-primary">Berkas Proposal</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!--==============================
-      Hero Area
-    ==============================-->
-    <section class="vs-hero-wrapper position-relative  ">
-        <div class="vs-hero-carousel" data-height="850" data-container="1900" data-slidertype="responsive">
-            <!-- Slide 1-->
-            <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnszoom:in; kenburnsscale:1.1;">
-                <img width="1920" height="850" src="{{ asset('canvas/assets/img/hero/hero-1-1.jpg') }}" class="ls-bg" alt="hero-bg">
-                <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; border-style:solid; border-color:#000; background-position:0% 0%; background-repeat:no-repeat; width:300px; height:1558px; background-color:rgba(14, 84, 245, 0.5); top:-473px; left:51px;" class="ls-l ls-text-layer d-hd-none" data-ls="offsetxin:-800; offsetyin:-800; durationin:1700; delayin:1200; easingin:easeOutQuint; rotatein:43.46; offsetxout:1200; offsetyout:1200; durationout:8000; startatout:slidechangeonly + 3000; easingout:easeOutQuint; scaleyout:5; rotation:43.46;"></div>
-                <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; border-style:solid; border-color:#000; background-position:0% 0%; background-repeat:no-repeat; width:589px; height:1819.7px; top:-485px; left:406px; background:linear-gradient(172deg, rgba(5, 26, 79, 0.35) 21%, rgba(0, 0, 0, 0) 54%);" class="ls-l ls-text-layer d-hd-none" data-ls="offsetxin:-800; offsetyin:-800; durationin:1500; delayin:1300; easingin:easeOutQuint; rotatein:43.46; offsetxout:1200; offsetyout:1200; durationout:8000; startatout:slidechangeonly + 3000; easingout:easeOutQuint; scaleyout:5; bgcolorout:transparent; colorout:transparent; rotation:43.46;"></div>
-                <p style="font-size:18px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:600; letter-spacing:0px; border-style:solid; background-position:0% 0%; background-repeat:no-repeat; font-family:Exo; color:#ffffff; border-width:2px 2px 2px 2px; border-color:#ffffff; border-radius:5px 5px 5px 5px; padding-top:9px; padding-right:23.5px; padding-left:23.5px; top:240px; left:588px; padding-bottom:9px;" class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer" data-ls="offsetxin:300; durationin:1500; delayin:400; easingin:easeOutQuint; offsetxout:300; durationout:1500; easingout:easeOutQuint;">WE HAVE TOP IT EXPERT</p>
-                <h1 style="top:225px; left:345px; font-weight:700; background-size:inherit; background-position:inherit; font-size:60px; color:#ffffff; font-family:Exo;" class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; position:relative;">
-                    BEST IT
-                </h1>
-                <h1 style="top:305px; left:345px; font-weight:700; background-size:inherit; background-position:inherit; font-size:60px; font-family:Exo; color:#ffffff; text-transform:none; border-style:solid; border-color:#000; background-color:transparent; background-repeat:no-repeat; cursor:auto;" class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer" data-ls="offsetxin:-200; durationin:1500; delayin:200; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint;">
-                    SERVICE &amp; SOLUTION 2022
-                </h1>
-                <div style="top:405px; left:350px; background-size:inherit; background-position:inherit; font-size:16px; line-height:28px; font-family:Fira Sans; width:695px; color:#ffffff; white-space:normal;" class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer" data-ls="offsetyin:50; durationin:1500; delayin:600; easingin:easeOutQuint; offsetyout:50; durationout:1500; easingout:easeOutQuint; position:relative;">Professionally repurpose intuitive total linkage after timely mindshare. Credibly coordinate reliable collaboration and idea-sharing after turnkey catalysts for change.</div>
-                <div style="top:495px; left:350px; background-size:inherit; background-position:inherit; font-size:24px;" class="ls-l ls-hide-tablet ls-hide-phone ls-html-layer" data-ls="offsetyin:50; durationin:1500; delayin:900; easingin:easeOutQuint; offsetyout:50; durationout:1500; easingout:easeOutQuint; position:relative;">
-                    <div class="ls-btn-group">
-                        <a href="/about" class="vs-btn ls-hero-btn">ABOUT US<i class="far fa-arrow-right"></i></a>
-                        <a href="/blog" class="vs-btn style2 ls-hero-btn">READ MORE<i class="far fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <p style="font-size:32px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:600; letter-spacing:0px; border-style:solid; background-position:0% 0%; background-repeat:no-repeat; font-family:Exo; color:#ffffff; border-width:2px 2px 2px 2px; border-color:#ffffff; border-radius:5px 5px 5px 5px; padding-top:18px; padding-right:44px; padding-left:44px; top:160px; left:90px; padding-bottom:18px;" class="ls-l ls-hide-desktop ls-hide-phone ls-text-layer" data-ls="offsetxin:300; durationin:1500; delayin:400; easingin:easeOutQuint; offsetxout:300; durationout:1500; easingout:easeOutQuint;">WE HAVE TOP IT EXPERT</p>
-                <h1 style="top:280px; left:80px; font-weight:700; background-size:inherit; background-position:inherit; font-size:80px; color:#ffffff; font-family:Exo;" class="ls-l ls-hide-desktop ls-hide-phone ls-text-layer" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; position:relative;">
-                    BEST IT SERVICE &amp;
-                </h1>
-                <h1 style="top:380px; left:80px; font-weight:700; background-size:inherit; background-position:inherit; font-size:80px; font-family:Exo; color:#ffffff; text-transform:none; border-style:solid; border-color:#000; background-color:transparent; background-repeat:no-repeat; cursor:auto;" class="ls-l ls-hide-desktop ls-hide-phone ls-text-layer" data-ls="offsetxin:-200; durationin:1500; delayin:200; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint;">
-                    SOLUTION 2022
-                </h1>
-                <div style="top:540px; left:80px; background-size:inherit; background-position:inherit; font-size:24px;" class="ls-l ls-hide-desktop ls-hide-phone ls-html-layer" data-ls="offsetyin:50; durationin:1500; delayin:900; easingin:easeOutQuint; offsetyout:50; durationout:1500; easingout:easeOutQuint; position:relative;">
-                    <div class="ls-btn-group">
-                        <a href="/about" class="vs-btn ls-hero-btn">ABOUT US<i class="far fa-arrow-right"></i></a>
-                        <a href="/blog" class="vs-btn style2 ls-hero-btn">READ MORE<i class="far fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <h1 style="top:120px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:130px; color:#ffffff; font-family:Exo; width:10000px;" class="ls-l ls-hide-desktop ls-hide-tablet ls-text-layer" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; position:relative;">
-                    BEST IT SERVICE &amp;
-                </h1>
-                <h1 style="top:280px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:130px; font-family:Exo; color:#ffffff; width:10000px; text-transform:none; border-style:solid; border-color:#000; background-color:transparent; background-repeat:no-repeat; cursor:auto;" class="ls-l ls-hide-desktop ls-hide-tablet ls-text-layer" data-ls="offsetxin:-200; durationin:1500; delayin:200; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint;">
-                    SOLUTION 2022
-                </h1>
-                <div style="top:520px; left:50%; text-align:center; background-size:inherit; background-position:inherit; font-size:24px; width:1000px;" class="ls-l ls-hide-desktop ls-hide-tablet ls-html-layer" data-ls="offsetyin:50; durationin:1500; delayin:900; easingin:easeOutQuint; offsetyout:50; durationout:1500; easingout:easeOutQuint; position:relative;">
-                    <div class="ls-btn-group">
-                        <a href="/about" class="vs-btn ls-hero-btn">ABOUT US<i class="far fa-arrow-right"></i></a>
-                        <a href="/blog" class="vs-btn style2 ls-hero-btn">READ MORE<i class="far fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div data-bg-src="{{ asset('canvas/assets/img/bg/ab-bg-1-1.jpg') }}">
-        <!--==============================
-    Features Area
-    ==============================-->
-        <section class="feature-wrap1  space-top space-extra-bottom">
-            <div class="container wow fadeInUp" data-wow-delay="0.2s">
-                <div class="row vs-carousel" data-slide-show="3" data-lg-slide-show="2" data-md-slide-show="2">
-                    <div class="col-xl-4">
-                        <div class="feature-style1">
-                            <div class="feature-icon"><img src="{{ asset('canvas/assets/img/icon/fe-1-1.png') }}" alt="Features"></div>
-                            <h3 class="feature-title h5"><a class="text-inherit" href="service-details.html">Development Services</a></h3>
-                            <p class="feature-text">We implement development solutions through highly efficient process improvements, ensuring maximum results are achieved.</p>
-                            <a href="service-details.html" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="feature-style1">
-                            <div class="feature-icon"><img src="{{ asset('canvas/assets/img/icon/fe-1-2.png') }}" alt="Features"></div>
-                            <h3 class="feature-title h5"><a class="text-inherit" href="service-details.html">Marketing Services</a></h3>
-                            <p class="feature-text">With measurable, data-driven strategies, we help you reach the right audience, increase conversions, and build a strong brand</p>
-                            <a href="service-details.html" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="feature-style1">
-                            <div class="feature-icon"><img src="{{ asset('canvas/assets/img/icon/fe-1-3.png') }}" alt="Features"></div>
-                            <h3 class="feature-title h5"><a class="text-inherit" href="service-details.html">Consulting Services</a></h3>
-                            <p class="feature-text">We provide strategic guidance that can increase operational efficiency, optimize business processes, and formulate innovative solutions.</p>
-                            <a href="service-details.html" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--==============================
-    About Us
-    ==============================-->
-        <section class="position-relative space-bottom">
-            <span class="about-shape1 d-none d-xl-block">ERAYA</span>
-            <div class="container z-index-common">
-                <div class="row gx-60">
-                    <div class="col-lg-6 col-xl-5 mb-50 mb-lg-0 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="img-box1">
-                            <div class="img-1">
-                                <img src="{{ asset('canvas/assets/img/about/ab-1-1.jpg') }}" alt="About image">
-                            </div>
-                            <div class="img-2">
-                                <img src="{{ asset('canvas/assets/img/about/ab-1-2.jpg') }}" alt="About image">
-                                <a class="play-btn style2 position-center popup-video" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i class=""><i class="fas fa-play"></i></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-7 align-self-center wow fadeInUp" data-wow-delay="0.3s">
-                        <span class="sec-subtitle"><i class="fas fa-bring-forward"></i>Get best It solution 2022</span>
-                        <h2 class="sec-title h1">Trust Our Best IT Solution For Your Business</h2>
-                        <p class="mb-4 mt-1 pb-3">Compellingly mesh cross-platform portals through functional human capital world-class architectures for orthogonal initiatives. Assertively benchmark visionary quality vectors after covalent e-tailers. Intrinsicly enhance 24/7 users and supply process</p>
-                        <div class="call-media">
-                            <div class="call-media__icon"><img src="{{ asset('canvas/assets/img/icon/tel-1-1.png') }}" alt="icon"></div>
-                            <div class="media-body">
-                                <span class="call-media__label">24 HOURS SERVICE AVAILABLE</span>
-                                <p class="call-media__info">Call Us: <a href="tel:+6668880000">+(666) 888 0000</a></p>
-                            </div>
-                        </div>
-                        <a href="about.html" class="vs-btn">About Us<i class="far fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <!--==============================
-    Service Area
-    ==============================-->
-    <section class=" space-top space-extra-bottom" data-bg-src="{{ asset('canvas/assets/img/bg/sr-bg-1-1.png') }}">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-8 col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="title-area">
-                        <span class="sec-subtitle">Our Latest Services</span>
-                        <h2 class="sec-title h1">What Kind of Services We are Offering</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row wow fadeInUp" data-wow-delay="0.2s">
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-style1">
-                        <div class="service-bg" data-bg-src="{{ asset('canvas/assets/img/bg/sr-box-bg-1.jpg') }}"></div>
-                        <div class="service-icon"><img src="{{ asset('canvas/assets/img/icon/sr-icon-1-1.png') }}" alt="Features"></div>
-                        <h3 class="service-title h5"><a href="service-details.html">Cloud Services</a></h3>
-                        <p class="service-text">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
-                        <a href="service-details.html" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-style1">
-                        <div class="service-bg" data-bg-src="{{ asset('canvas/assets/img/bg/sr-box-bg-1.jpg') }}"></div>
-                        <div class="service-icon"><img src="{{ asset('canvas/assets/img/icon/sr-icon-1-2.png') }}" alt="Features"></div>
-                        <h3 class="service-title h5"><a href="service-details.html">Web Development</a></h3>
-                        <p class="service-text">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
-                        <a href="service-details.html" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-style1">
-                        <div class="service-bg" data-bg-src="{{ asset('canvas/assets/img/bg/sr-box-bg-1.jpg') }}"></div>
-                        <div class="service-icon"><img src="{{ asset('canvas/assets/img/icon/sr-icon-1-3.png') }}" alt="Features"></div>
-                        <h3 class="service-title h5"><a href="service-details.html">IT Management</a></h3>
-                        <p class="service-text">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
-                        <a href="service-details.html" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-style1">
-                        <div class="service-bg" data-bg-src="{{ asset('canvas/assets/img/bg/sr-box-bg-1.jpg') }}"></div>
-                        <div class="service-icon"><img src="{{ asset('canvas/assets/img/icon/sr-icon-1-4.png') }}" alt="Features"></div>
-                        <h3 class="service-title h5"><a href="service-details.html">Software Services</a></h3>
-                        <p class="service-text">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
-                        <a href="service-details.html" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-style1">
-                        <div class="service-bg" data-bg-src="{{ asset('canvas/assets/img/bg/sr-box-bg-1.jpg') }}"></div>
-                        <div class="service-icon"><img src="{{ asset('canvas/assets/img/icon/sr-icon-1-5.png') }}" alt="Features"></div>
-                        <h3 class="service-title h5"><a href="service-details.html">Machine Learning</a></h3>
-                        <p class="service-text">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
-                        <a href="service-details.html" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-style1">
-                        <div class="service-bg" data-bg-src="{{ asset('canvas/assets/img/bg/sr-box-bg-1.jpg') }}"></div>
-                        <div class="service-icon"><img src="{{ asset('canvas/assets/img/icon/sr-icon-1-6.png') }}" alt="Features"></div>
-                        <h3 class="service-title h5"><a href="service-details.html">Business Analysis</a></h3>
-                        <p class="service-text">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
-                        <a href="service-details.html" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--==============================
-    FAQ Area
-    ==============================-->
-    <section class="faq-wrap1  ">
-        <div class="faq-shape1" data-bg-src="{{ asset('canvas/assets/img/bg/faq-bg-1-1.jpg') }}"></div>
-        <div class="faq-shape2" data-bg-src="{{ asset('canvas/assets/img/bg/faq-bg-1-2.jpg') }}"></div>
-        <div class="container">
-            <div class="row gx-60">
-                <div class="col-lg-6 pb-20 pb-lg-0 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="img-box2">
-                        <div class="img-1"><img src="{{ asset('canvas/assets/img/faq/faq-1-1.jpg') }}" alt="FAQ image"></div>
-                        <div class="img-2"><img src="{{ asset('canvas/assets/img/faq/faq-1-2.jpg') }}" alt="FAQ image"><a class="play-btn style3 position-center" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i class=""><i class="fas fa-play"></i></i></a></div>
-                    </div>
-                </div>
-                <div class="col-lg-6 align-self-center">
-                    <span class="sec-subtitle text-white"><i class="fas fa-bring-forward"></i>Talk About Something</span>
-                    <h2 class="sec-title text-white mb-4 pb-2 h1">How can we help you?</h2>
-                    <div class="accordion accordion-style1" id="faqVersion1">
-                        <div class="accordion-item">
-                            <div class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Master Technology It Solution Services Making?
-                                </button>
-                            </div>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqVersion1">
-                                <div class="accordion-body">
-                                    <p> Assertively communicate multidisciplinary content through emerging skills for intermandated e-tailers. Rapidiously revolutionize emerging supply for interdependent portals. Monotonectally restore 24/365 leadership for high quality niche markets transform emerging mindshare...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <div class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Contrary to popular belief is not simply random text?
-                                </button>
-                            </div>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqVersion1">
-                                <div class="accordion-body">
-                                    <p> Assertively communicate multidisciplinary content through emerging skills for intermandated e-tailers. Rapidiously revolutionize emerging supply for interdependent portals. Monotonectally restore 24/365 leadership for high quality niche markets transform emerging mindshare...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <div class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    There are many variations of passages of available?
-                                </button>
-                            </div>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqVersion1">
-                                <div class="accordion-body">
-                                    <p> Assertively communicate multidisciplinary content through emerging skills for intermandated e-tailers. Rapidiously revolutionize emerging supply for interdependent portals. Monotonectally restore 24/365 leadership for high quality niche markets transform emerging mindshare...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--==============================
-    Skill Area
-    ==============================-->
-    <section class=" space-top space-extra-bottom">
-        <div class="container">
-            <div class="row flex-row-reverse">
-                <div class="col-lg-5 col-xxl-auto mb-30 pb-20 pb-lg-0 wow fadeInUp" data-wow-delay="0.2s">
-                    <img src="{{ asset('canvas/assets/img/skill/skill-1-1.jpg') }}" alt="Skill image">
-                </div>
-                <div class="col-lg-7 col-xxl-6 me-xl-auto">
-                    <span class="sec-subtitle"><i class="fas fa-bring-forward"></i>The Great Company Skill</span>
-                    <h2 class="sec-title h1">Connecting People And Build Technology</h2>
-                    <p class="mb-4 pb-1">Energistically evisculate an expanded array of meta-services after cross-media strategic theme areas. Interactively simplify interactive customer service before fully tested relationship parallel task high standards...</p>
-                    <div class="progress-box">
-                        <h3 class="progress-box__title">Business Security</h3>
-                        <span class="progress-box__number">65%</span>
-                        <div class="progress-box__progress">
-                            <div class="progress-box__bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="progress-box">
-                        <h3 class="progress-box__title">Career Development</h3>
-                        <span class="progress-box__number">88%</span>
-                        <div class="progress-box__progress">
-                            <div class="progress-box__bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="progress-box">
-                        <h3 class="progress-box__title">Business Inovation</h3>
-                        <span class="progress-box__number">90%</span>
-                        <div class="progress-box__progress">
-                            <div class="progress-box__bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--==============================
-    Blog Area
-    ==============================-->
-    <section class="vs-blog-wrapper  space-top space-extra-bottom" data-bg-src="{{ asset('canvas/assets/img/bg/blog-bg-1-1.jpg') }}">
-        <div class="container  wow fadeInUp" data-wow-delay="0.2s">
-            <div class="row justify-content-center text-center">
-                <div class="col-xl-6">
-                    <div class="title-area">
-                        <span class="sec-subtitle">Our Happy Customers</span>
-                        <h2 class="sec-title h1">Recent Projects</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row vs-carousel" data-slide-show="3" data-md-slide-show="2">
-                <div class="col-xl-4">
-                    <div class="vs-blog blog-style1">
-                        <div class="blog-img">
-                            <img src="{{ asset('canvas/assets/img/blog/blog-1-1.jpg') }}  " alt="Blog Image" class="w-100">
-                            <div class="blog-content">
-                                <div class="blog-meta">
-                                    <a href="blog.html"><i class="far fa-calendar"></i>24 Feb, 2022</a>
-                                    <a href="blog.html"><i class="fal fa-user"></i>by admin</a>
-                                </div>
-                                <h3 class="blog-title h5"><a href="blog-details.html">Contrary to popular belief ipsum is not simply </a></h3>
-                                <a href="blog-details.html" class="link-btn">Read Details<i class="far fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="vs-blog blog-style1">
-                        <div class="blog-img">
-                            <img src="{{ asset('canvas/assets/img/blog/blog-1-4.jpg') }}" alt="Blog Image" class="w-100">
-                            <div class="blog-content">
-                                <div class="blog-meta">
-                                    <a href="blog.html"><i class="far fa-calendar"></i>30 Mar, 2022</a>
-                                    <a href="blog.html"><i class="fal fa-user"></i>by admin</a>
-                                </div>
-                                <h3 class="blog-title h5"><a href="blog-details.html">Lorem ipsum placeholder text commonly used</a></h3>
-                                <a href="blog-details.html" class="link-btn">Read Details<i class="far fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="vs-blog blog-style1">
-                        <div class="blog-img">
-                            <img src="{{ asset('canvas/assets/img/blog/blog-1-2.jpg') }}" alt="Blog Image" class="w-100">
-                            <div class="blog-content">
-                                <div class="blog-meta">
-                                    <a href="blog.html"><i class="far fa-calendar"></i>31 Jul, 2022</a>
-                                    <a href="blog.html"><i class="fal fa-user"></i>by admin</a>
-                                </div>
-                                <h3 class="blog-title h5"><a href="blog-details.html">From its medieval to the digital learn everything</a></h3>
-                                <a href="blog-details.html" class="link-btn">Read Details<i class="far fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="vs-blog blog-style1">
-                        <div class="blog-img">
-                            <img src="{{ asset('canvas/assets/img/blog/blog-1-3.jpg') }}" alt="Blog Image" class="w-100">
-                            <div class="blog-content">
-                                <div class="blog-meta">
-                                    <a href="blog.html"><i class="far fa-calendar"></i>26 Aug, 2022</a>
-                                    <a href="blog.html"><i class="fal fa-user"></i>by admin</a>
-                                </div>
-                                <h3 class="blog-title h5"><a href="blog-details.html">Global Business Goal Make Life Easy From Tech</a></h3>
-                                <a href="blog-details.html" class="link-btn">Read Details<i class="far fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--==============================
-			Footer Area
-	==============================-->
-    <footer class="footer-wrapper footer-layout1" data-bg-src="{{ asset('canvas/assets/img/shape/bg-footer-1-1.jpg') }}">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 footer-info_group">
-                        <div class="footer-info">
-                            <div class="footer-info_icon"><i class="fal fa-map-marker-alt"></i></div>
-                            <div class="media-body">
-                                <span class="footer-info_label">Head office address</span>
-                                <div class="footer-info_link">Gedung Graha Krama Yudha Lt. 4 Unit B Jl. Hj. Tutty Alawiyah no. 43, Kel. Duren Tiga, Kec. Pancoran DKI Jakarta - Jakarta Selatan 12760</div>
-                                <span class="footer-info_label">Branch office address</span>
-                                <div class="footer-info_link">Jl. Tarupala Gang 2 No 2 RT 24 RW 04 Kec. Pakisaji, Keluaran Kebonagung, Kabupaten Malang, Jawa Timur 65165</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 footer-info_group">
-                        <div class="footer-info">
-                            <div class="footer-info_icon"><i class="fal fa-clock"></i></div>
-                            <div class="media-body">
-                                <span class="footer-info_label">Working Hours WIB</span>
-                                <div class="footer-info_link">Weekdays 08.00 - 21.00<br>Weekend 10.00 - 18.00<br>Sunday Closed</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="widget-area">
-            <div class="container">
+            <div class="header-bg">
                 <div class="row justify-content-between">
-                    <div class="col-md-6 col-lg-4 col-xl-auto">
-                        <div class="widget footer-widget">
-                            <h3 class="widget_title">About Us</h3>
-                            <div class="vs-widget-about">
-                                <p class="footer-text" style="text-align: justify;">A professional software house established in 2019, we experienced provide Digital and IT solutions for organizations. We served numbers of clients accross Indonesia from SME, Enterprise and Government. Our passion and intuitiveness help the business growth seamlessly.</p>
-                                <div class="footer-social">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-behance"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <div class="col-auto">
+                        <div class="header-links">
+                            <ul>
+                                <li><i class="fas fa-tv"></i>IP KAMU : {{$ip}}</li>
+                                <li><i class="fas fa-map-marker-alt"></i><a href="mailto:info@example.com">LOKASI KAMU : {{$location}}</a></li>
+                                <li><i class="fas fa-shield-check"></i>STATUS KAMU : TAMU</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="header-right">
+                            <div class="header-links ps-0">
+                                <div class="social-style1">
+                                    <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+                                    <a href="javascript:void(0)"><i class="fab fa-youtube"></i></a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-2 col-xl-auto">
-                        <div class="widget widget_nav_menu  footer-widget">
-                            <h3 class="widget_title">Links</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Our Mission</a></li>
-                                    <li><a href="#">Meet The Teams</a></li>
-                                    <li><a href="#">Our Projects</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                <ul>
+                                    <li><a href="javascript:void(0)"><i class="fa-solid fa-user"></i>DAFTAR</a></li>
+                                    <li><a href="javascript:void(0)"><i class="fa-solid fa-lock"></i>MASUK</a></li>
                                 </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-2 col-xl-auto">
-                        <div class="widget widget_nav_menu  footer-widget">
-                            <h3 class="widget_title">Explore</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="#">What we Offer</a></li>
-                                    <li><a href="#">Our Story</a></li>
-                                    <li><a href="#">Latest Posts</a></li>
-                                    <li><a href="#">Help Center</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-auto">
-                        <div class="widget footer-widget">
-                            <h3 class="widget_title">Office Maps</h3>
-                            <div class="footer-map">
-                            <iframe  title="office location map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0241718589114!2d106.82590461135096!3d-6.2605461937018365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f37d942851e3%3A0xe99ce2e714d0a5!2sPT.SAID%20KRAMA%20YUDHA!5e0!3m2!1sid!2sid!4v1730714088653!5m2!1sid!2sid" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copyright-wrap">
+    </div>
+    <div class="sticky-wrapper">
+        <div class="sticky-active">
             <div class="container">
-                <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2019 - {{date('Y')}} - All rights reserved by <a class="text-white" href="https://erayadigital.co.id/">PT. Eraya Digital Solusindo</a>.</p>
+                <div class="menu-bg">
+                    <div class="row position-relative align-items-center">
+                        <div class="col-auto">
+                            <div class="header-logo">
+                                <a href="{{ url('') }}">
+                                    <img style="width: 200px" src="{{ asset('template_v1/img/logo/logo_eds_color.png') }}" alt="Logo Eraya Digital Solusindo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="menu-area">
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col">
+                                        <nav class="main-menu menu-style1 d-none d-lg-block">
+                                            <ul>
+                                                <li>
+                                                    <a href="{{ url('') }}">Beranda</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">Forum</a>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a href="javascript:void(0)">Layanan</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="javascript:void(0)">Pengembangan Aplikasi</a></li>
+                                                        <li><a href="javascript:void(0)">Konsultasi Pajak dan Akuntansi</a></li>
+                                                        <li><a href="javascript:void(0)">Konsultasi Perangkat Keras atau Lunak</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">Hubungi Kami</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="col-auto d-lg-none">
+                                        <button class="vs-menu-toggle d-inline-block">
+                                            <i class="fal fa-bars"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-auto d-xl-block d-none">
+                                        <div class="header-icons">
+                                            <a href="#" class="icon-btn sideMenuToggler"><i
+                                                    class="fa-solid fa-bars"></i></a>
+                                            <a href="#" class="icon-btn">
+                                                <i class="fa-solid fa-globe"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+    </div>
+</header>
+<!--==============================
+Hero Area
+============================== -->
+<div class="hero-layout1 style2" data-bg-src="{{ asset('template_v1/img/hero/hero-bg-2-1.jpg') }}">
+    <div class="container position-relative">
+        <div class="vs-carousel z-index1" data-slide-show="1" data-autoplay="true" data-fade="true"
+            data-arraw="true">
+            <div class="hero-slide">
+                <div class="container">
+                    <div class="row g-5 align-items-top justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="hero-content text-center">
+                                <div class="title-area text-center">
+                                    <span class="sec-subtitle">Pengembangan Aplikasi</span>
+                                    <h2 class="sec-title h1 mb-20">Bisnis Digital Anda adalah <span>Keahlian</span> Kami</h2>
+                                    <p class="sec-text">Kami berfokus pada solusi digital untuk membantu bisnis Anda tumbuh dan bersaing di era modern. Terkhusunya untuk memecahkan masalah anda dengan bantuan teknologi. Jadi jangan khawatir serta jangan malu jikalau anda ingin berkonsultasi dengan kami</p>
+                                </div>
+                                <div class="hero-bottom">
+                                    <a href="javascript:void(0)" class="vs-btn">Lihat Portfolio</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="container">
+                    <div class="row g-5 align-items-top justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="hero-content text-center">
+                                <div class="title-area text-center">
+                                    <span class="sec-subtitle">Konsultasi Pajak dan Akuntansi</span>
+                                    <h2 class="sec-title h1 mb-20">Orang Bijak <span>Taat</span> Pajak Dan Awasi Penggunaannya</h2>
+                                    <p class="sec-text">Konsultan pajak membantu mengurus hal-hal yang berkaitan dengan kepatuhan pajak kliennya, mulai dari menghitung, membayar, juga melaporkannya. Konsultan pajak menawarkan jasa konsultansi masalah perpajakan, selain itu juga bisa melakukan perencanaan pajak untuk mengoptimalkan keuntungan klien.</p>
+                                </div>
+                                <div class="hero-bottom">
+                                    <a href="javascript:void(0)" class="vs-btn">Konsultasi Yuk</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="container">
+                    <div class="row g-5 align-items-top justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="hero-content text-center">
+                                <div class="title-area text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                                    <span class="sec-subtitle">Konsultasi Perangkat Keras dan Lunak</span>
+                                    <h2 class="sec-title h1 mb-20">Butuh Konsultasi <span>Perangkat</span> Untuk Infrastruktur Anda
+                                    </h2>
+                                    <p class="sec-text">Kami menyediakan solusi keamanan perangkat keras dan lunak yang andal untuk melindungi data dan aktivitas online Anda seperti DevOps, Security, dan Network. Dengan pengalaman dan keahlian kami, kami membantu Anda merasa aman di dunia digital.</p>
+                                </div>
+                                <div class="hero-bottom">
+                                    <a href="javascript:void(0)" class="vs-btn">Minta Katalog</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape-mockup d-xl-block" style="bottom: 0%;"><img src="{{ asset('template_v1/img/shep/hero-world-shep.png') }}" alt="shapes"></div>
+    <div class="shape-mockup moving d-none d-xl-block" style="top: 5%;">
+        <div class="star"></div>
+        <div class="meteor-1"></div>
+        <div class="meteor-2"></div>
+        <div class="meteor-3"></div>
+        <div class="meteor-4"></div>
+        <div class="meteor-5"></div>
+        <div class="meteor-6"></div>
+        <div class="meteor-7"></div>
+        <div class="meteor-8"></div>
+        <div class="meteor-9"></div>
+        <div class="meteor-10"></div>
+        <div class="meteor-11"></div>
+        <div class="meteor-12"></div>
+        <div class="meteor-13"></div>
+        <div class="meteor-14"></div>
+        <div class="meteor-15"></div>
+    </div>
+</div>
+<!--==============================
+Process Area
+============================== -->
+<div class="process-layout2">
+    <div class="container-style2">
+        <div class="process-style2">
+            <div class="row g-4">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="process-item">
+                        <div class="process-inner">
+                            <div class="process-icon">
+                                <img src="{{ asset('template_v1/img/icon/process-icon-1-1.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="process-title h5">Easy Download</h2>
+                        </div>
+                        <p class="process-text">
+                            Get started quickly by downloading the VEEPN app for your device.
+                        </p>
+                        <div class="shep-btn">
+                            <svg width="72" height="72" viewBox="0 0 111 111" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 0C19.33 0 35 15.67 35 35V41C35 50.33 50.67 76 75 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                                    fill="none"></path>
+                            </svg>
+                        </div>
+                        <a href="blog-details.html" class="icon-btn">01</a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="process-item">
+                        <div class="process-inner">
+                            <div class="process-icon">
+                                <img src="{{ asset('template_v1/img/icon/process-icon-1-2.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="process-title h5">Instant Setup/ Install</h2>
+                        </div>
+                        <p class="process-text">
+                            Install the app effortlessly with just Need a few clicks.
+                        </p>
+                        <div class="shep-btn">
+                            <svg width="72" height="72" viewBox="0 0 111 111" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 0C19.33 0 35 15.67 35 35V41C35 50.33 50.67 76 75 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                                    fill="none"></path>
+                            </svg>
+                        </div>
+                        <a href="blog-details.html" class="icon-btn">02</a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="process-item">
+                        <div class="process-inner">
+                            <div class="process-icon">
+                                <img src="{{ asset('template_v1/img/icon/process-icon-1-3.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="process-title h5">Connect to a Server</h2>
+                        </div>
+                        <p class="process-text">
+                            Choose from our global server network and connect with a single tap.
+                        </p>
+                        <div class="shep-btn">
+                            <svg width="72" height="72" viewBox="0 0 111 111" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 0C19.33 0 35 15.67 35 35V41C35 50.33 50.67 76 75 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                                    fill="none"></path>
+                            </svg>
+                        </div>
+                        <a href="blog-details.html" class="icon-btn">03</a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="process-item">
+                        <div class="process-inner">
+                            <div class="process-icon">
+                                <img src="{{ asset('template_v1/img/icon/process-icon-1-4.svg') }}" alt="icon"> 
+                            </div>
+                            <h2 class="process-title h5">Browse Securely</h2>
+                        </div>
+                        <p class="process-text">
+                            Once connected,take advantage of anonymous, browsing.
+                        </p>
+                        <div class="shep-btn">
+                            <svg width="72" height="72" viewBox="0 0 111 111" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 0C19.33 0 35 15.67 35 35V41C35 50.33 50.67 76 75 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                                    fill="none"></path>
+                            </svg>
+                        </div>
+                        <a href="blog-details.html" class="icon-btn">04</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==============================
+About Area
+============================== -->
+<section class="about-layout2 space-bottom">
+    <div class="container wow fadeInUp wow-animated" data-wow-delay="0.3s">
+        <div class="row gx-60 gy-5 align-items-center">
+            <div class="col-xl-6">
+                <div class="about-img wow fadeInUp">
+                    <img src="https://i.pinimg.com/originals/51/ce/d1/51ced1ca835521237877e5380a94c554.gif" alt="Mengenai Kami">
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="about-content">
+                    <div class="title-area text-left wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                        <span class="sec-subtitle2">About Us</span>
+                        <h2 class="sec-title">Your Trusted Partner For Digital Bussines</h2>
+                    </div>
+                    <div class="about-body">
+                        <p class="about-text">
+                            From custom application development to seamless cloud integration, we provide comprehensive IT services designed to accelerate your digital transformation. Let us help you optimize your business processes, enhance productivity, and achieve sustainable growth in today’s competitive digital landscape.
+                        </p>
+                        <div class="counter-style2">
+                            <div class="media-style">
+                                <div class="media-inner">
+                                    <div class="media-counter">
+                                        <div class="media-count">
+                                            <h2 class="media-title counter-number" data-count="1">1</h2>
+                                        </div>
+                                        <p class="media-text">Negara Yang Tersedia</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-style">
+                                <div class="media-inner">
+                                    <div class="media-counter">
+                                        <div class="media-count">
+                                            <h2 class="media-title counter-number" data-count="15">15</h2>
+                                        </div>
+                                        <p class="media-text">Server Aktif</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-style">
+                                <div class="media-inner">
+                                    <div class="media-counter">
+                                        <div class="media-count">
+                                            <h2 class="media-title counter-number" data-count="13">13</h2>
+                                        </div>
+                                        <p class="media-text">Projeck Selesai</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--==============================
+Service Area
+============================== -->
+<section class="service-layout1 service-space space-bottom">
+    <div class="container wow fadeInUp wow-animated" data-wow-delay="0.3s">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="title-area text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                    <span class="sec-subtitle">Services</span>
+                    <h2 class="sec-title">Our Awesome & Valuable Services</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row vs-carousel wow fadeInUp wow-animated" data-wow-delay="0.3s" data-slide-show="4"
+            data-ml-slide-show="3" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true"
+            data-arrows="true">
+            <div class="col-lg-3">
+                <div class="service-wrap">
+                    <div class="service-style1">
+                        <div class="service-body">
+                            <div class="service-icon">
+                                <img src="{{ asset('template_v1/img/icon/service-icon-1-1.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="service-title h6"><a href="service-details.html">Threat Protection</a></h2>
+                            <p class="service-text">
+                                Threat Protection blocks malicious sites, phishing, and malware, keeping your online
+                                secure.
+                            </p>
+                        </div>
+                        <a href="service-details.html" class="icon-btn"><i
+                                class="fa-regular fa-arrow-right"></i></a>
+                        <div class="shep-btn">
+                            <svg width="72" height="72" viewBox="0 0 111 111" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 0C19.33 0 35 15.67 35 35V41C35 50.33 50.67 76 75 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                                    fill="none"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="service-wrap">
+                    <div class="service-style1">
+                        <div class="service-body">
+                            <div class="service-icon">
+                                <img src="{{ asset('template_v1/img/icon/service-icon-1-2.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="service-title h6"><a href="service-details.html">Dark Web Monitor</a></h2>
+                            <p class="service-text">
+                                Our Dark Web Monitor scans the dark web for your data and alerts you if it's found,
+                                helping you.
+                            </p>
+                        </div>
+                        <a href="service-details.html" class="icon-btn"><i
+                                class="fa-regular fa-arrow-right"></i></a>
+                        <div class="shep-btn">
+                            <svg width="72" height="72" viewBox="0 0 111 111" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 0C19.33 0 35 15.67 35 35V41C35 50.33 50.67 76 75 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                                    fill="none"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="service-wrap">
+                    <div class="service-style1">
+                        <div class="service-body">
+                            <div class="service-icon">
+                                <img src="{{ asset('template_v1/img/icon/service-icon-1-3.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="service-title h6"><a href="service-details.html">Dedicated IP</a></h2>
+                            <p class="service-text">
+                                Get a unique, static IP address for better security, easy remote access, and a
+                                reliable experience.
+                            </p>
+                        </div>
+                        <a href="service-details.html" class="icon-btn"><i
+                                class="fa-regular fa-arrow-right"></i></a>
+                        <div class="shep-btn">
+                            <svg width="72" height="72" viewBox="0 0 111 111" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 0C19.33 0 35 15.67 35 35V41C35 50.33 50.67 76 75 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                                    fill="none"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="service-wrap">
+                    <div class="service-style1">
+                        <div class="service-body">
+                            <div class="service-icon">
+                                <img src="{{ asset('template_v1/img/icon/service-icon-1-4.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="service-title h6"><a href="service-details.html">Secure Browsing</a></h2>
+                            <p class="service-text">
+                                Protect your online activities with encrypted connections that keep your data safe
+                                from hackers.
+                            </p>
+                        </div>
+                        <a href="service-details.html" class="icon-btn"><i
+                                class="fa-regular fa-arrow-right"></i></a>
+                        <div class="shep-btn">
+                            <svg width="72" height="72" viewBox="0 0 111 111" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 0C19.33 0 35 15.67 35 35V41C35 50.33 50.67 76 75 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                                    fill="none"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="service-wrap">
+                    <div class="service-style1">
+                        <div class="service-body">
+                            <div class="service-icon">
+                                <img src="{{ asset('template_v1/img/icon/service-icon-1-2.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="service-title h6"><a href="service-details.html">Dark Web Monitor</a></h2>
+                            <p class="service-text">
+                                Our Dark Web Monitor scans the dark web for your data and alerts you if it's found,
+                                helping you.
+                            </p>
+                        </div>
+                        <a href="service-details.html" class="icon-btn"><i
+                                class="fa-regular fa-arrow-right"></i></a>
+                        <div class="shep-btn">
+                            <svg width="72" height="72" viewBox="0 0 111 111" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 0C19.33 0 35 15.67 35 35V41C35 50.33 50.67 76 75 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                                    fill="none"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--==============================
+Video Area
+============================== -->
+<section class="video-layout1 video-space space-top" data-bg-src="{{ asset('template_v1/img/bg/video-bg2.jpg') }}">
+    <div class="container position-relative wow fadeInUp wow-animated" data-wow-delay="0.3s">
+        <div class="cta-style1">
+            <div class="cta-wrap wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                <div class="row justify-content-md-end">
+                    <div class="col-xl-7">
+                        <div class="cta-content">
+                            <div class="title-area text-left">
+                                <span class="sec-subtitle2">Stay In Your Cybersecurity</span>
+                                <h2 class="sec-title">Save 70% On VEEPN Plus Get Extra Month</h2>
+                            </div>
+                            <div class="cta-body">
+                                <div class="download-btn">
+                                    <a href="#" class="vs-btn2">Get The Deal</a>
+                                </div>
+                                <span class="cta-notice"><i class="fas fa-sack-dollar"></i>30 Day Money-Back
+                                    Guarantee</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-md-8">
+                        <div class="cta-img">
+                            <img src="{{ asset('template_v1/img/cta/cta-img1.png') }}" alt="cta-image">
+                        </div>
+                    </div>
+                </div>
+                <div id="particles-js4" style="top: 0%; right: 0%; z-index: -1; width:45%; height:100%;"><canvas
+                        class="particles-js-canvas-el"></canvas></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--==============================
+team Area
+============================== -->
+<section class="team-layout2 team-space" style="padding-bottom:100px">
+    <div class="container position-relative">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-5">
+                <div class="title-area text-lg-start text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                    <span class="sec-subtitle2">Team Member</span>
+                    <h2 class="sec-title">Meet Our Awesome & Expert Team Members</h2>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="title-arraw text-end">
+                    <button class="icon-btn slick-prev" data-slick-prev=".team-slider"><i
+                            class="fa-regular fa-arrow-left"></i></button>
+                    <button class="icon-btn slick-next" data-slick-next=".team-slider"><i
+                            class="fa-regular fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="row vs-carousel team-slider wow fadeInUp wow-animated" data-wow-delay="0.3s" data-slide-show="4"
+            data-ml-slide-show="3" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true"
+            data-arrows="false">
+            <div class="col-lg-3">
+                <div class="team-style2">
+                    <div class="team-img">
+                        <img src="{{asset('template_v1/img/team/team-img-2-1.jpg')}}" alt="team-img">
+                    </div>
+                    <div class="member-content">
+                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Rodja Hartmaan</a>
+                        </h4>
+                        <span class="degi">CEO, of VEEPN</span>
+                        <div class="member-links">
+                            <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="team-style2">
+                    <div class="team-img">
+                        <img src="{{asset('template_v1/img/team/team-img-2-2.jpg')}}" alt="team-img">
+                    </div>
+                    <div class="member-content">
+                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Olivia
+                                Thompson</a></h4>
+                        <span class="degi">CEO, of VEEPN</span>
+                        <div class="member-links">
+                            <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="team-style2">
+                    <div class="team-img">
+                        <img src="{{asset('template_v1/img/team/team-img-2-3.jpg')}}" alt="team-img">
+                    </div>
+                    <div class="member-content">
+                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Olivia
+                                Thompson</a></h4>
+                        <span class="degi">CEO, of VEEPN</span>
+                        <div class="member-links">
+                            <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="team-style2">
+                    <div class="team-img">
+                        <img src="{{asset('template_v1/img/team/team-img-2-4.jpg')}}" alt="team-img">
+                    </div>
+                    <div class="member-content">
+                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Daniel Hayes</a>
+                        </h4>
+                        <span class="degi">CEO, of VEEPN</span>
+                        <div class="member-links">
+                            <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="team-style2">
+                    <div class="team-img">
+                        <img src="{{asset('template_v1/img/team/team-img-2-5.jpg')}}" alt="team-img">
+                    </div>
+                    <div class="member-content">
+                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Laura Mitchell</a>
+                        </h4>
+                        <span class="degi">CEO, of VEEPN</span>
+                        <div class="member-links">
+                            <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--==============================
+Faq Area
+============================== -->
+<section class="faq-layout1 bg-body2 space-bottom">
+    <div class="container wow fadeInUp wow-animated" data-wow-delay="0.3s">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="title-area text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                    <span class="sec-subtitle">FAQS</span>
+                    <h2 class="sec-title">Frequently Asked Any Questions Us </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row gy-5 gx-60">
+            <div class="col-lg-8">
+                <div class="accordion accordion-style1" id="faqVersion1">
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What
+                                is a VPN and how does it work?</button>
+                        </div>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#faqVersion1">
+                            <div class="accordion-body">
+                                <p>VEEPN provides enhanced security, privacy, and unrestricted internet access. With
+                                    our advanced encryption,
+                                    no-logs policy, and global server network, you can browse securely and bypass
+                                    geo-restrictions with ease.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Where can I get some?
+                            </button>
+                        </div>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqVersion1">
+                            <div class="accordion-body">
+                                <p>Yes, despite the removal of Government Feed-in Tariff, installs have been
+                                    forecast to
+                                    continue at the current rate and even increase in 2025.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Will VEEPN slow down my internet connection?
+                            </button>
+                        </div>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#faqVersion1">
+                            <div class="accordion-body">
+                                <p>Yes, despite the removal of Government Feed-in Tariff, installs have been
+                                    forecast to
+                                    continue at the current rate and even increase in 2025.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Where can I get some?
+                            </button>
+                        </div>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#faqVersion1">
+                            <div class="accordion-body">
+                                <p>Yes, despite the removal of Government Feed-in Tariff, installs have been
+                                    forecast to
+                                    continue at the current rate and even increase in 2025.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                What if I have issues with my VPN connection?
+                            </button>
+                        </div>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#faqVersion1">
+                            <div class="accordion-body">
+                                <p>VEEPN provides enhanced security, privacy, and unrestricted internet access. With
+                                    our advanced encryption,
+                                    no-logs policy, and global server network, you can browse securely and bypass
+                                    geo-restrictions with ease..
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                How do I set up VEEPN?
+                            </button>
+                        </div>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#faqVersion1">
+                            <div class="accordion-body">
+                                <p>VEEPN provides enhanced security, privacy, and unrestricted internet access. With
+                                    our advanced encryption,
+                                    no-logs policy, and global server network, you can browse securely and bypass
+                                    geo-restrictions with ease.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="faq-img">
+                    <img src="{{asset('template_v1/img/default/faq-img1.png')}}" alt="faq">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--==============================
+Blog  Area
+==============================-->
+<section class="vs-blog-wrapper blog-layout2 bg-title space">
+    <div class="container z-index1 wow fadeInUp wow-animated" data-wow-delay="0.3s">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-5">
+                <div class="title-area text-lg-start text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                    <span class="sec-subtitle2">Rekanan Dan Pekerjaan</span>
+                    <h2 class="sec-title">Cek Yuk Rekanan Kami Yang Keren & Hasilnya</h2>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="title-arraw text-end">
+                    <button class="icon-btn slick-prev" data-slick-prev=".blog-slider"><i
+                            class="fa-regular fa-arrow-left"></i></button>
+                    <button class="icon-btn slick-next" data-slick-next=".blog-slider"><i
+                            class="fa-regular fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5 space-extra-bottom">
+            <div class="col-lg-12">
+                <div class="row vs-carousel blog-slider" data-slide-show="3" data-lg-slide-show="2"
+                    data-md-slide-show="2" data-autoplay="true" data-arrows="false">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-style2 vs-blog">
+                            <div class="blog-inner">
+                                <div class="blog-date">23
+                                    <span class="month">Mar</span>
+                                    <span class="year">2025</span>
+                                </div>
+                                <div class="blog-img">
+                                    <a href="blog-details.html"><img class="img"
+                                            src="{{asset('template_v1/img/blog/blog-s-1-1.jpg')}}" alt="Blog Image"></a>
+                                    <div class="shep-btn">
+                                        <svg width="75" height="75" viewBox="0 0 111 111" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0 0C19.33 0 35 15.67 35 35V41C35 50.33 50.67 76 75 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                                                fill="none"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a href="blog-details.html" class="icon-btn"><i
+                                        class="fa-regular fa-arrow-right"></i></a>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta mb-3">
+                                    <a href="blog.html"><i class="fa-solid fa-user"></i>Rivanur Rafi</a>
+                                    <a href="blog.html"><i class="fas fa-comments"></i>14 Comments</a>
+                                </div>
+                                <h2 class="blog-title h5">
+                                    <a href="blog-details.html">Top 5 Reasons to Use a VPN for Streaming</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-style2 vs-blog">
+                            <div class="blog-inner">
+                                <div class="blog-date">24
+                                    <span class="month">Mar</span>
+                                    <span class="year">2025</span>
+                                </div>
+                                <div class="blog-img">
+                                    <a href="blog-details.html"><img class="img"
+                                            src="{{asset('template_v1/img/blog/blog-s-1-2.jpg')}}" alt="Blog Image"></a>
+                                    <div class="shep-btn">
+                                        <svg width="75" height="75" viewBox="0 0 111 111" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0 0C19.33 0 35 15.67 35 35V41C35 50.33 50.67 76 75 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                                                fill="none"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a href="blog-details.html" class="icon-btn"><i
+                                        class="fa-regular fa-arrow-right"></i></a>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta mb-3">
+                                    <a href="blog.html"><i class="fa-solid fa-user"></i>Rivanur Rafi</a>
+                                    <a href="blog.html"><i class="fas fa-comments"></i>14 Comments</a>
+                                </div>
+                                <h2 class="blog-title h5">
+                                    <a href="blog-details.html">Why Online Privacy Matters More Than Ever</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-style2 vs-blog">
+                            <div class="blog-inner">
+                                <div class="blog-date">23
+                                    <span class="month">Mar</span>
+                                    <span class="year">2025</span>
+                                </div>
+                                <div class="blog-img">
+                                    <a href="blog-details.html"><img class="img"
+                                            src="{{asset('template_v1/img/blog/blog-s-1-3.jpg')}}" alt="Blog Image"></a>  
+                                    <div class="shep-btn">
+                                        <svg width="75" height="75" viewBox="0 0 111 111" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0 0C19.33 0 35 15.67 35 35V41C35 50.33 50.67 76 75 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                                                fill="none"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a href="blog-details.html" class="icon-btn"><i
+                                        class="fa-regular fa-arrow-right"></i></a>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta mb-3">
+                                    <a href="blog.html"><i class="fa-solid fa-user"></i>Rivanur Rafi</a>
+                                    <a href="blog.html"><i class="fas fa-comments"></i>14 Comments</a>
+                                </div>
+                                <h2 class="blog-title h5">
+                                    <a href="blog-details.html">How VEEPN Protects You from Cyber Threats</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-style2 vs-blog">
+                            <div class="blog-inner">
+                                <div class="blog-date">23
+                                    <span class="month">Mar</span>
+                                    <span class="year">2025</span>
+                                </div>
+                                <div class="blog-img">
+                                    <a href="blog-details.html"><img class="img"
+                                            src="{{asset('template_v1/img/blog/blog-s-1-4.jpg')}}" alt="Blog Image"></a>
+                                    <div class="shep-btn">
+                                        <svg width="75" height="75" viewBox="0 0 111 111" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0 0C19.33 0 35 15.67 35 35V41C35 50.33 50.67 76 75 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                                                fill="none"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a href="blog-details.html" class="icon-btn"><i
+                                        class="fa-regular fa-arrow-right"></i></a>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta mb-3">
+                                    <a href="blog.html"><i class="fa-solid fa-user"></i>Rivanur Rafi</a>
+                                    <a href="blog.html"><i class="fas fa-comments"></i>14 Comments</a>
+                                </div>
+                                <h2 class="blog-title h5">
+                                    <a href="blog-details.html">How to Choose the Best VPN Server for Your Needs</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-style2 vs-blog">
+                            <div class="blog-inner">
+                                <div class="blog-date">23
+                                    <span class="month">Mar</span>
+                                    <span class="year">2025</span>
+                                </div>
+                                <div class="blog-img">
+                                    <a href="blog-details.html"><img class="img"
+                                            src="{{asset('template_v1/img/blog/blog-s-1-5.jpg')}}" alt="Blog Image"></a>
+                                    <div class="shep-btn">
+                                        <svg width="75" height="75" viewBox="0 0 111 111" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0 0C19.33 0 35 15.67 35 35V41C35 50.33 50.67 76 75 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                                                fill="none"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a href="blog-details.html" class="icon-btn"><i
+                                        class="fa-regular fa-arrow-right"></i></a>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta mb-3">
+                                    <a href="blog.html"><i class="fa-solid fa-user"></i>Rivanur Rafi</a>
+                                    <a href="blog.html"><i class="fas fa-comments"></i>14 Comments</a>
+                                </div>
+                                <h2 class="blog-title h5">
+                                    <a href="blog-details.html">How VEEPN Keeps Your Data Safe on Public Wi-Fi</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container z-index1 wow fadeInUp wow-animated" data-wow-delay="0.3s">
+        <div class="brand-style2">
+            <div class="row align-items-center justify-content-between vs-carousel" data-slide-show="5"
+                data-lg-slide-show="4" data-md-slide-show="3" data-center-mode="true" data-lg-center-mode="true"
+                data-md-center-mode="true" data-autoplay="true" data-arrows="false">
+                <div class="col-auto">
+                    <div class="brand-item-oke">
+                        <img src="{{ asset('template_v1/img/brand/GayengMasAbadi.png') }}" alt="PT. GAYENG MAS ABADI">
+                    </div>
+                    <p class="media-info text-center">PT. GAYENG MAS ABADI<br>2023 - SEKARANG</p>
+                </div>
+                <div class="col-auto">
+                    <div class="brand-item-oke">
+                        <img src="{{ asset('template_v1/img/brand/SMKN1MALANG.png') }}" alt="SMKN 1 Malang">
+                    </div>
+                    <p class="media-info text-center">SMKN 1 Malang<br>2019 - SEKARANG</p>
+                </div>
+                <div class="col-auto">
+                    <div class="brand-item-oke">
+                        <img src="{{ asset('template_v1/img/brand/PGRI6MALANG.jpg') }}" alt="SMK PGRI 6 Malang">
+                    </div>
+                    <p class="media-info text-center">SMK PGRI 6 Malang<br>2021 - SEKARANG</p>
+                </div>
+                <div class="col-auto">
+                    <div class="brand-item-oke">
+                        <img src="{{ asset('template_v1/img/brand/KOTAKCANTIKMAGELANG.png') }}" alt="KOTAK CANTIK MAGELANG">
+                    </div>
+                    <p class="media-info text-center">KOTAK CANTIK MAGELANG<br>2023 - SEKARANG</p>
+                </div>
+                <div class="col-auto">
+                    <div class="brand-item-oke">
+                        <img src="{{ asset('template_v1/img/brand/YAYASANSINARABADI.png') }}" alt="SMK SINAR ABADI MELAK">
+                    </div>
+                    <p class="media-info text-center">SMK SINAR ABADI MELAK<br>2023 - SEKARANG</p>
+                </div>
+                <div class="col-auto">
+                    <div class="brand-item-oke">
+                        <img src="{{ asset('template_v1/img/brand/ARTHAMEDICALCENTRE.png') }}" alt="KLINIK ARTHA MEDICAL CENTRE MELAK">
+                    </div>
+                    <p class="media-info text-center">KLINIK ARTHA MEDICAL CENTRE MELAK<br>2024 - SEKARANG</p>
+                </div>
+                <div class="col-auto">
+                    <div class="brand-item-oke">
+                        <img src="{{ asset('template_v1/img/brand/PUSKESMASDEMPAR.png') }}" alt="PUSKESMAS DEMPAR">
+                    </div>
+                    <p class="media-info text-center">PUSKESMAS DEMPAR KUTAI BARAT<br>2023 - SEKARANG</p>
+                </div>
+                <div class="col-auto">
+                    <div class="brand-item-oke">
+                        <img src="{{ asset('template_v1/img/brand/OLIVIABABYSHOP.png') }}" alt="OLIVIA BABY SHOP MALANG">
+                    </div>
+                    <p class="media-info text-center">OLIVIA BABY SHOP MALANG<br>2014 - 2024</p>
+                </div>
+                <div class="col-auto">
+                    <div class="brand-item-oke">
+                        <img src="{{ asset('template_v1/img/brand/SANJAYAGROUP.png') }}" alt="SANJAYAGROUP">
+                    </div>
+                    <p class="media-info text-center">SANJAYA GROUP (OLI DAN GROSIR)<br>2022 - SEKARANG</p>
+                </div>
+                <div class="col-auto">
+                    <div class="brand-item-oke">
+                        <img src="{{ asset('template_v1/img/brand/TOKOQQTEMPURSARI.png') }}" alt="SANJAYAGROUP">
+                    </div>
+                    <p class="media-info text-center">TOKO SEPATU QQ TEMPUR SARI<br>2022 - SEKARANG</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="process-particle1" style="top: 0%; left: 0%; width: 30%; height: 70%; z-index: 0;"><canvas
+            class="particles-js-canvas-el"></canvas></div>
+    <div id="process-particle2" style="bottom: 0%; right: 0%; width: 30%; height: 50%; z-index: 0;"><canvas
+            class="particles-js-canvas-el"></canvas></div>
+</section>
+<!--==============================
+Footer Area
+==============================-->
+<footer class="footer-wrapper  footer-layout1" data-bg-src="{{asset('template_v1/img/bg/footer-bg-1-1.jpg')}}">
+    <div class="container">
+        <div class="footer-top">
+            <div class="row g-5 justify-content-lg-between justify-content-center align-items-center">
+                <div class="col-xl-5 col-lg-4">
+                    <div class="footer-logo">
+                        <a href="{{ url('') }}"><img style="width: 300px;" src="{{ asset('template_v1/img/logo/logo_eds_color.png') }}" alt="Logo Eraya Digital Solusindo"></a>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-8">
+                    <div class="widget widget_newsletter footer-widget">
+                        <div class="newsletter1">
+                            <div class="newsletter-inner">
+                                <span class="newsletter-icon"><img src="{{asset('template_v1/img/icon/envlope1.png')}}"
+                                        alt="icon"></span>
+                                <h4 class="newsletter_title h5">Subscribe Newsletter</h4>
+                            </div>
+                            <form class="newsletter-form">
+                                <div class="search-btn">
+                                    <input class="form-control" type="email" placeholder="Enter your email....">
+                                    <button type="submit" class="vs-btn2">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="widget-area">
+        <div class="container">
+            <div class="row g-5 justify-content-center">
+                <div class="col-xl-4 col-md-6">
+                    <div class="widget footer-widget">
+                        <div class="vs-widget-about">
+                            <h3 class="widget_title">About Company</h3>
+                            <p class="footer-text">A professional software house established in 2024, we experienced provide Digital and IT solutions for organizations. We served numbers of clients accross Indonesia from SME, Enterprise and Government. Our passion and intuitiveness help the business growth seamlessly.</p>
+                            <div class="footer-social">
+                                <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="icon-btn" href="#"><i class="fab fa-instagram"></i></a>
+                                <a class="icon-btn" href="#"><i class="fa-brands fa-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-md-6">
+                    <div class="widget footer-widget">
+                        <h3 class="widget_title">Office Maps</h3>
+                        <div class="footer-map">
+                        <iframe  title="office location map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0241718589114!2d106.82590461135096!3d-6.2605461937018365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f37d942851e3%3A0xe99ce2e714d0a5!2sPT.SAID%20KRAMA%20YUDHA!5e0!3m2!1sid!2sid!4v1730714088653!5m2!1sid!2sid" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="row">
+                        <div class="col-md-6">
+                                <div class="media-style1">
+                                    <div class="media-icon icon-btn"><i class="fa-solid fa-map-location-dot"></i></div>
+                                    <div class="media-body">
+                                        <h3 class="media-title">[Head Office Address] Gedung Graha Krama Yudha Lt. 4 Unit B Jl. Hj. Tutty Alawiyah no. 43, Kel. Duren Tiga, Kec. Pancoran DKI Jakarta - Jakarta Selatan 12760</h3>
+                                    </div>
+                                </div>
+                                <div class="media-style1">
+                                    <div class="media-icon icon-btn"><i class="fa-solid fa-map-location-dot"></i></div>
+                                    <div class="media-body">
+                                        <h3 class="media-title">[Branch Office Address] Jl. Tarupala Gang 2 No 2 RT 24 RW 04 Kec. Pakisaji, Keluaran Kebonagung, Kabupaten Malang, Jawa Timur 65165</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="widget footer-widget">
+                                    <div class="media-style1">
+                                        <div class="media-icon icon-btn"><i class="fa-solid fa-phone"></i></div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Phone or Chat No:</h3>
+                                            <p class="media-info"><a href="tel:+6285799663331">(+62)857-9966-3331 (Erfan)</a></p>
+                                            <p class="media-info"><a href="tel:+6282557808535">(+62)825-5780-8535 (Aries)</a></p>
+                                            <p class="media-info"><a href="tel:+6282233641442">(+62)822-3364-1442 (Ryan)</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="media-style1">
+                                        <div class="media-icon icon-btn"><i class="fa-solid fa-envelope"></i></div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Email Address:</h3>
+                                            <p class="media-info"><a href="mailto:hallo@erayadigital.co.id">hallo@erayadigital.co.id</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright-wrap">
+            <div class="row g-2 justify-content-lg-between justify-content-center align-items-center">
+                <div class="col-auto">
+                    <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 - <?php echo date("Y") ?> <a
+                            href="{{ url('') }}">PT. Eraya Digital Solusindo</a></p>
+                </div>
+                <div class="col-auto">
+                    <div class="copyright-menu">
+                        <ul class="list-unstyled">
+                            <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                            <li><a href="javascript:void(0)">Terms & Conditions </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 @endsection
 @section('css_load')
+<link rel="stylesheet" href="{{ asset('template_v1/sass/template/meteor.css') }}">
+<style>
+.vs-btn{
+    border-radius: 20px;
+}
+.brand-item-oke {
+    background-color: white !important;
+    padding: 35px 40px;
+    border-radius: 20px;
+    height: auto;
+    max-width: 240px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.brand-item-oke img {
+    transition: all 0.5s ease;
+}
+</style>
 @endsection
 @section('js_load')
 @endsection

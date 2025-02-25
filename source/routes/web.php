@@ -1,7 +1,6 @@
 <?php
 
+use App\Http\Controllers\EndUser\Landing;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('halamandepan');
-});
+Route::get('/', [Landing::class, "index"])->name('web.halaman_depan');
