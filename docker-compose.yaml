@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web_service:
-    image: company_profile:2.0.0
+    image: eds_company_profile:2.0.0
     ports:
       - target: 8080
         published: 10160
