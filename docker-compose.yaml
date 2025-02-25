@@ -11,7 +11,9 @@ services:
     volumes:
       - ./source/storage/:/var/www/html/storage/
     environment:
-      # Add your environment variables here if needed
+      # Example of environment variables
+      APP_ENV: production
+      APP_DEBUG: false
     logging:
       driver: "json-file"
       options:
