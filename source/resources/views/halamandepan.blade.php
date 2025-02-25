@@ -259,10 +259,10 @@ Process Area
                             <div class="process-icon">
                                 <img src="{{ asset('template_v1/img/icon/process-icon-1-1.svg') }}" alt="icon">
                             </div>
-                            <h2 class="process-title h5">Easy Download</h2>
+                            <h2 class="process-title h5">Konsultasi</h2>
                         </div>
                         <p class="process-text">
-                            Get started quickly by downloading the VEEPN app for your device.
+                            Konsultasikan masalah anda kepada kami secara jelas dan terperinci.
                         </p>
                         <div class="shep-btn">
                             <svg width="72" height="72" viewBox="0 0 111 111" fill="none"
@@ -272,7 +272,7 @@ Process Area
                                     fill="none"></path>
                             </svg>
                         </div>
-                        <a href="blog-details.html" class="icon-btn">01</a>
+                        <a href="javascript:void(0)" class="icon-btn">01</a>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
@@ -281,10 +281,10 @@ Process Area
                             <div class="process-icon">
                                 <img src="{{ asset('template_v1/img/icon/process-icon-1-2.svg') }}" alt="icon">
                             </div>
-                            <h2 class="process-title h5">Instant Setup/ Install</h2>
+                            <h2 class="process-title h5">Metode dan Pengerjaan</h2>
                         </div>
                         <p class="process-text">
-                            Install the app effortlessly with just Need a few clicks.
+                            Kami merancang dan mengembangkan solusi sesuai dengan kebutuhan.
                         </p>
                         <div class="shep-btn">
                             <svg width="72" height="72" viewBox="0 0 111 111" fill="none"
@@ -294,7 +294,7 @@ Process Area
                                     fill="none"></path>
                             </svg>
                         </div>
-                        <a href="blog-details.html" class="icon-btn">02</a>
+                        <a href="javascript:void(0)" class="icon-btn">02</a>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
@@ -303,10 +303,10 @@ Process Area
                             <div class="process-icon">
                                 <img src="{{ asset('template_v1/img/icon/process-icon-1-3.svg') }}" alt="icon">
                             </div>
-                            <h2 class="process-title h5">Connect to a Server</h2>
+                            <h2 class="process-title h5">Refisi dan Penyempuran</h2>
                         </div>
                         <p class="process-text">
-                            Choose from our global server network and connect with a single tap.
+                            Sesuaikan dan penyempuran solusi yang telah dikembangkan.
                         </p>
                         <div class="shep-btn">
                             <svg width="72" height="72" viewBox="0 0 111 111" fill="none"
@@ -316,7 +316,7 @@ Process Area
                                     fill="none"></path>
                             </svg>
                         </div>
-                        <a href="blog-details.html" class="icon-btn">03</a>
+                        <a href="javascript:void(0)" class="icon-btn">03</a>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
@@ -325,10 +325,10 @@ Process Area
                             <div class="process-icon">
                                 <img src="{{ asset('template_v1/img/icon/process-icon-1-4.svg') }}" alt="icon"> 
                             </div>
-                            <h2 class="process-title h5">Browse Securely</h2>
+                            <h2 class="process-title h5">Publish dan Maintain</h2>
                         </div>
                         <p class="process-text">
-                            Once connected,take advantage of anonymous, browsing.
+                            Jalankan dan rawat produk/jasa yang telah selesai secara bertahap.
                         </p>
                         <div class="shep-btn">
                             <svg width="72" height="72" viewBox="0 0 111 111" fill="none"
@@ -338,7 +338,7 @@ Process Area
                                     fill="none"></path>
                             </svg>
                         </div>
-                        <a href="blog-details.html" class="icon-btn">04</a>
+                        <a href="javascript:void(0)" class="icon-btn">04</a>
                     </div>
                 </div>
             </div>
@@ -359,12 +359,12 @@ About Area
             <div class="col-xl-6">
                 <div class="about-content">
                     <div class="title-area text-left wow fadeInUp wow-animated" data-wow-delay="0.3s">
-                        <span class="sec-subtitle2">About Us</span>
-                        <h2 class="sec-title">Your Trusted Partner For Digital Bussines</h2>
+                        <span class="sec-subtitle2">Kami Siapa ?</span>
+                        <h2 class="sec-title">Mitra Tepercaya Anda Untuk Bisnis Digital</h2>
                     </div>
                     <div class="about-body">
-                        <p class="about-text">
-                            From custom application development to seamless cloud integration, we provide comprehensive IT services designed to accelerate your digital transformation. Let us help you optimize your business processes, enhance productivity, and achieve sustainable growth in today’s competitive digital landscape.
+                        <p class="about-text" style="text-align: justify;margin-top:-30px">
+                            Kami adalah mitra yang terpercaya untuk bisnis digital Anda. Dengan layanan IT yang komprehensif, kami membantu Anda memaksimalkan potensi digital Anda. Dari pengembangan aplikasi kustom hingga integrasi cloud yang lancar, kami menyediakan layanan IT yang dirancang untuk mempercepat transformasi digital Anda.
                         </p>
                         <div class="counter-style2">
                             <div class="media-style">
@@ -1137,8 +1137,8 @@ Footer Area
                 <div class="col-xl-4 col-md-6">
                     <div class="widget footer-widget">
                         <div class="vs-widget-about">
-                            <h3 class="widget_title">About Company</h3>
-                            <p class="footer-text">A professional software house established in 2024, we experienced provide Digital and IT solutions for organizations. We served numbers of clients accross Indonesia from SME, Enterprise and Government. Our passion and intuitiveness help the business growth seamlessly.</p>
+                            <h3 class="widget_title">Sekilas Mengenai Kami</h3>
+                            <p class="footer-text">Didirikan pada tahun 2024, kami adalah software house profesional yang berpengalaman dalam menyediakan solusi Digital dan TI untuk berbagai organisasi. Kami telah melayani banyak klien di seluruh Indonesia, mulai dari UKM, perusahaan besar, hingga instansi pemerintah. Dengan semangat dan ketajaman intuisi, kami membantu pertumbuhan bisnis secara optimal dan berkelanjutan.</p>
                             <div class="footer-social">
                                 <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
