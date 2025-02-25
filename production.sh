@@ -29,12 +29,12 @@ sudo chmod -R 775 /var/www/html/storage/logs
 
 # Pull from the repository
 ######################################
-eval $(ssh-agent)
-sudo -E ssh-add ~/.ssh/vps_gio_eds
+#eval $(ssh-agent)
+#sudo -E ssh-add ~/.ssh/vps_gio_eds
 # Membatalkan semua perubahan lokal dan mengembalikan ke commit terakhir dari remote
-sudo git reset --hard
+#sudo git reset --hard
 # Lakukan git pull untuk menarik perubahan dari remote repository
-git pull
+#git pull
 
 
 ######################################
