@@ -13,7 +13,6 @@ services:
     environment:
       # Example of environment variables
       APP_ENV: production
-      APP_DEBUG: false
     logging:
       driver: "json-file"
       options:
