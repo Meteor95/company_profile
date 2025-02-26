@@ -410,10 +410,10 @@ Service Area
 <section class="service-layout1 service-space space-bottom">
     <div class="container wow fadeInUp wow-animated" data-wow-delay="0.3s">
         <div class="row justify-content-center">
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <div class="title-area text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
-                    <span class="sec-subtitle">Services</span>
-                    <h2 class="sec-title">Our Awesome & Valuable Services</h2>
+                    <span class="sec-subtitle">Layanan</span>
+                    <h2 class="sec-title">Layanan Kami Yang Mengagumkan</h2>
                 </div>
             </div>
         </div>
@@ -424,13 +424,10 @@ Service Area
                 <div class="service-wrap">
                     <div class="service-style1">
                         <div class="service-body">
-                            <div class="service-icon">
-                                <img src="{{ asset('template_v1/img/icon/service-icon-1-1.svg') }}" alt="icon">
-                            </div>
-                            <h2 class="service-title h6"><a href="service-details.html">Threat Protection</a></h2>
-                            <p class="service-text">
-                                Threat Protection blocks malicious sites, phishing, and malware, keeping your online
-                                secure.
+                            <img src="{{ asset('template_v1/img/icon/mail_server.svg') }}" alt="icon">
+                            <h2 class="service-title h6 text-center"><a href="javascript:void(0)">Mail Server</a></h2>
+                            <p class="service-text text-center">
+                                Ingin membuat nema email kamu atau perusahaanmu menjadi profesional  dengan cepat dan aman seperti ini namakamu@namaperusahaan.co.id.
                             </p>
                         </div>
                         <a href="service-details.html" class="icon-btn"><i
@@ -450,13 +447,10 @@ Service Area
                 <div class="service-wrap">
                     <div class="service-style1">
                         <div class="service-body">
-                            <div class="service-icon">
-                                <img src="{{ asset('template_v1/img/icon/service-icon-1-2.svg') }}" alt="icon">
-                            </div>
-                            <h2 class="service-title h6"><a href="service-details.html">Dark Web Monitor</a></h2>
-                            <p class="service-text">
-                                Our Dark Web Monitor scans the dark web for your data and alerts you if it's found,
-                                helping you.
+                            <img src="{{ asset('template_v1/img/icon/developer.svg') }}" alt="icon">
+                            <h2 class="service-title h6 text-center"><a href="javascript:void(0)">Pengembangan Aplikasi</a></h2>
+                            <p class="service-text text-center">
+                                Ingin merubah bisnis manual kamu menjadi digital agar dapat termonitoring secara akurat dan mudah serta dilihat banyak orang.
                             </p>
                         </div>
                         <a href="service-details.html" class="icon-btn"><i
@@ -476,13 +470,10 @@ Service Area
                 <div class="service-wrap">
                     <div class="service-style1">
                         <div class="service-body">
-                            <div class="service-icon">
-                                <img src="{{ asset('template_v1/img/icon/service-icon-1-3.svg') }}" alt="icon">
-                            </div>
-                            <h2 class="service-title h6"><a href="service-details.html">Dedicated IP</a></h2>
-                            <p class="service-text">
-                                Get a unique, static IP address for better security, easy remote access, and a
-                                reliable experience.
+                            <img src="{{ asset('template_v1/img/icon/konsultan_pajak.svg') }}" alt="icon">
+                            <h2 class="service-title h6 text-center"><a href="javascript:void(0)">Pajak dan Akuntansi</a></h2>
+                            <p class="service-text text-center">
+                                Kami akan mengumpulkan informasi tentang situasi keuangan klien dan menyusun strategi, untuk membantu mengurangi kewajiban pajak dengan mengambil keuntungan dari kredit dan pemotongan pajak.
                             </p>
                         </div>
                         <a href="service-details.html" class="icon-btn"><i
@@ -502,13 +493,10 @@ Service Area
                 <div class="service-wrap">
                     <div class="service-style1">
                         <div class="service-body">
-                            <div class="service-icon">
-                                <img src="{{ asset('template_v1/img/icon/service-icon-1-4.svg') }}" alt="icon">
-                            </div>
-                            <h2 class="service-title h6"><a href="service-details.html">Secure Browsing</a></h2>
+                            <img src="{{ asset('template_v1/img/icon/umkm.svg') }}" alt="icon">
+                            <h2 class="service-title h6"><a href="javascript:void(0)">UMKM</a></h2>
                             <p class="service-text">
-                                Protect your online activities with encrypted connections that keep your data safe
-                                from hackers.
+                                Mengembangkan usaha anda dengan bantuan teknologi, ayo konsultasikan masalah anda kepada kami serta akan membantu sepenuh hati
                             </p>
                         </div>
                         <a href="service-details.html" class="icon-btn"><i
@@ -528,13 +516,10 @@ Service Area
                 <div class="service-wrap">
                     <div class="service-style1">
                         <div class="service-body">
-                            <div class="service-icon">
-                                <img src="{{ asset('template_v1/img/icon/service-icon-1-2.svg') }}" alt="icon">
-                            </div>
-                            <h2 class="service-title h6"><a href="service-details.html">Dark Web Monitor</a></h2>
-                            <p class="service-text">
-                                Our Dark Web Monitor scans the dark web for your data and alerts you if it's found,
-                                helping you.
+                            <img src="{{ asset('template_v1/img/icon/devops.svg') }}" alt="icon">
+                            <h2 class="service-title h6 text-center"><a href="service-details.html">Dev OPS</a></h2>
+                            <p class="service-text text-center">
+                                Membutuhkan jasa untuk merawat infrastruktur anda seperti server, jaringan lokal , database, dsb. Jangan khawatir kami sudah terbiasa.
                             </p>
                         </div>
                         <a href="service-details.html" class="icon-btn"><i
@@ -565,14 +550,10 @@ Video Area
                         <div class="cta-content">
                             <div class="title-area text-left">
                                 <span class="sec-subtitle2">Stay In Your Cybersecurity</span>
-                                <h2 class="sec-title">Save 70% On VEEPN Plus Get Extra Month</h2>
+                                <h2 class="sec-title">Jangan khawatir semua informasi baik data tertulis atau digital yang anda konsultasikan kepada kami akan kami jaga 100%</h2>
                             </div>
                             <div class="cta-body">
-                                <div class="download-btn">
-                                    <a href="#" class="vs-btn2">Get The Deal</a>
-                                </div>
-                                <span class="cta-notice"><i class="fas fa-sack-dollar"></i>30 Day Money-Back
-                                    Guarantee</span>
+                                <span class="cta-notice"><i class="fas fa-sack-dollar"></i> 100% Satisfaction Guarantee</span>
                             </div>
                         </div>
                     </div>
@@ -594,13 +575,13 @@ team Area
 <section class="team-layout2 team-space" style="padding-bottom:100px">
     <div class="container position-relative">
         <div class="row justify-content-between align-items-center">
-            <div class="col-lg-5">
+            <div class="col-lg-8">
                 <div class="title-area text-lg-start text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
-                    <span class="sec-subtitle2">Team Member</span>
-                    <h2 class="sec-title">Meet Our Awesome & Expert Team Members</h2>
+                    <span class="sec-subtitle2">Keluarga Eraya</span>
+                    <h2 class="sec-title">Kenalan Dengan Tim Kami Yang Keren Dan Profesional</h2>
                 </div>
             </div>
-            <div class="col-lg-7">
+            <div class="col-lg-4">
                 <div class="title-arraw text-end">
                     <button class="icon-btn slick-prev" data-slick-prev=".team-slider"><i
                             class="fa-regular fa-arrow-left"></i></button>
@@ -618,9 +599,9 @@ team Area
                         <img src="{{asset('template_v1/img/team/team-img-2-1.jpg')}}" alt="team-img">
                     </div>
                     <div class="member-content">
-                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Rodja Hartmaan</a>
+                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Erfan Huda</a>
                         </h4>
-                        <span class="degi">CEO, of VEEPN</span>
+                        <span class="degi">Konsultan Pajak dan Akuntan</span>
                         <div class="member-links">
                             <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
                             <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
@@ -636,9 +617,8 @@ team Area
                         <img src="{{asset('template_v1/img/team/team-img-2-2.jpg')}}" alt="team-img">
                     </div>
                     <div class="member-content">
-                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Olivia
-                                Thompson</a></h4>
-                        <span class="degi">CEO, of VEEPN</span>
+                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Mochamad Aries S</a></h4>
+                        <span class="degi">Sistem Analis</span>
                         <div class="member-links">
                             <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
                             <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
@@ -654,9 +634,8 @@ team Area
                         <img src="{{asset('template_v1/img/team/team-img-2-3.jpg')}}" alt="team-img">
                     </div>
                     <div class="member-content">
-                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Olivia
-                                Thompson</a></h4>
-                        <span class="degi">CEO, of VEEPN</span>
+                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Ryan Dony Pratama</a></h4>
+                        <span class="degi">Senior Programmer</span>
                         <div class="member-links">
                             <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
                             <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
@@ -672,9 +651,9 @@ team Area
                         <img src="{{asset('template_v1/img/team/team-img-2-4.jpg')}}" alt="team-img">
                     </div>
                     <div class="member-content">
-                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Daniel Hayes</a>
+                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Yoppi Niko Ifandika</a>
                         </h4>
-                        <span class="degi">CEO, of VEEPN</span>
+                        <span class="degi">Senior Programmer</span>
                         <div class="member-links">
                             <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
                             <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
@@ -690,9 +669,9 @@ team Area
                         <img src="{{asset('template_v1/img/team/team-img-2-5.jpg')}}" alt="team-img">
                     </div>
                     <div class="member-content">
-                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Laura Mitchell</a>
+                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Achmad Rozikin</a>
                         </h4>
-                        <span class="degi">CEO, of VEEPN</span>
+                        <span class="degi">DevOps Spesialis</span>
                         <div class="member-links">
                             <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
                             <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
@@ -711,7 +690,7 @@ Faq Area
 <section class="faq-layout1 bg-body2 space-bottom">
     <div class="container wow fadeInUp wow-animated" data-wow-delay="0.3s">
         <div class="row justify-content-center">
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <div class="title-area text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
                     <span class="sec-subtitle">FAQS</span>
                     <h2 class="sec-title">Frequently Asked Any Questions Us </h2>
