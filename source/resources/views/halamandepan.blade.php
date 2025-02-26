@@ -494,8 +494,8 @@ Service Area
                     <div class="service-style1">
                         <div class="service-body">
                             <img src="{{ asset('template_v1/img/icon/umkm.svg') }}" alt="icon">
-                            <h2 class="service-title h6"><a href="javascript:void(0)">UMKM</a></h2>
-                            <p class="service-text">
+                            <h2 class="service-title h6 text-center"><a href="javascript:void(0)">UMKM</a></h2>
+                            <p class="service-text text-center">
                                 Mengembangkan usaha anda dengan bantuan teknologi, ayo konsultasikan masalah anda kepada kami serta akan membantu sepenuh hati
                             </p>
                         </div>
@@ -599,6 +599,24 @@ team Area
                         <img src="{{asset('template_v1/img/team/team-img-2-1.jpg')}}" alt="team-img">
                     </div>
                     <div class="member-content">
+                        <h4 class="member-name h5"><a class="team-title" href="team-details.html">Ariza Agung P</a>
+                        </h4>
+                        <span class="degi">Marketing Eraya Digital</span>
+                        <div class="member-links">
+                            <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="icon-btn" href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="team-style2">
+                    <div class="team-img">
+                        <img src="{{asset('template_v1/img/team/team-img-2-1.jpg')}}" alt="team-img">
+                    </div>
+                    <div class="member-content">
                         <h4 class="member-name h5"><a class="team-title" href="team-details.html">Erfan Huda</a>
                         </h4>
                         <span class="degi">Konsultan Pajak dan Akuntan</span>
@@ -686,7 +704,7 @@ team Area
 </section>
 <!--==============================
 Faq Area
-============================== -->
+============================== 
 <section class="faq-layout1 bg-body2 space-bottom">
     <div class="container wow fadeInUp wow-animated" data-wow-delay="0.3s">
         <div class="row justify-content-center">
@@ -809,7 +827,7 @@ Faq Area
             </div>
         </div>
     </div>
-</section>
+</section>-->
 <!--==============================
 Blog  Area
 ==============================-->
@@ -1154,6 +1172,7 @@ Footer Area
                                         <div class="media-icon icon-btn"><i class="fa-solid fa-phone"></i></div>
                                         <div class="media-body">
                                             <h3 class="media-title">Phone or Chat No:</h3>
+                                            <p class="media-info"><a href="tel:+6281945112427">(+62)819-4511-2427 (Agung)</a></p>
                                             <p class="media-info"><a href="tel:+6285799663331">(+62)857-9966-3331 (Erfan)</a></p>
                                             <p class="media-info"><a href="tel:+6282557808535">(+62)825-5780-8535 (Aries)</a></p>
                                             <p class="media-info"><a href="tel:+6282233641442">(+62)822-3364-1442 (Ryan)</a></p>
