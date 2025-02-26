@@ -1229,6 +1229,7 @@ Footer Area
     width: 100%;
     text-align: center;
     cursor: pointer;
+    margin: auto;
 }
 .brand-item-oke img {
     transition: all 0.5s ease;
