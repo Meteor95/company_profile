@@ -4,6 +4,12 @@
 ######################################
 CURRENT_USER=$(eval "whoami")
 CURRENT_GROUP=$(eval "id -gn")
+# Hapus versi lama
+docker rmi -f eds_company_profile:2.2.0
+# Bangun image baru
+docker build -t eds_company_profile:2.3.0 .
+# Push image baru ke registry
+docker push eds_company_profile:2.3.0
 
 # Source code location
 sudo chown -R $CURRENT_USER:$CURRENT_GROUP source/app
