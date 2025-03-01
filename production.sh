@@ -30,8 +30,8 @@ if docker images | grep -q "${IMAGE_NAME}:${OLD_IMAGE_TAG}"; then
 fi
 
 # Build dan push image baru
-docker build -t localhost:5000/${IMAGE_NAME}:${NEW_IMAGE_TAG} .
-docker push localhost:5000/${IMAGE_NAME}:${NEW_IMAGE_TAG}
+docker build -t ${IMAGE_NAME}:${NEW_IMAGE_TAG} .
+docker push ${IMAGE_NAME}:${NEW_IMAGE_TAG}
 
 # Set izin untuk source code
 sudo chown -R $CURRENT_USER:$CURRENT_GROUP source/{app,bootstrap,config,public,resources,resources/lang,routes}
@@ -46,9 +46,9 @@ sudo chown -R nobody:nogroup /var/www/html/storage/logs
 sudo chmod -R 775 /var/www/html/storage/logs
 
 # Reset database SQLite
-rm -f /var/www/html/database/database.sqlite
-touch /var/www/html/database/database.sqlite
-php artisan migrate --force
+sudo rm -f /var/www/html/database/database.sqlite
+sudo touch /var/www/html/database/database.sqlite
+sudo php artisan migrate --force
 
 # Deploy ke Docker Swarm
 sudo docker stack remove eds_company_profile || true
