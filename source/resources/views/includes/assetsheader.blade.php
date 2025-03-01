@@ -1,10 +1,14 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>PT. Eraya Digital Solusindo - Boost Your Business with Technology</title>
-<meta name="author" content="Vecuro">
-<meta name="description" content="PT. Eraya Digital Solusindo - Boost Your Business with Technology">
-<meta name="keywords" content="PT. Eraya Digital Solusindo - Boost Your Business with Technology">
+<title>PT. Eraya Digital Solusindo | Solusi Digital untuk UMKM, Startup, dan Konsultan Pajak</title>
+<meta name="author" content="PT. Eraya Digital Solusindo">
+<meta name="description" content="PT. Eraya Digital Solusindo membantu UMKM, Pemerintah, Individual, dan konsultan pajak berkembang dengan teknologi digital terkini." />
+<meta name="keywords" content="Solusi digital, IT untuk UMKM, teknologi bisnis, startup, konsultan pajak, PT. Eraya Digital Solusindo, jasa pembuatan website, jasa pembuatan aplikasi, software house malang, software house jakarta, konsultan it malang, konsultan pajak malang, konsultan pajak jakarta, konsultan it jakarta">
 <meta name="robots" content="INDEX,FOLLOW">
+<meta property="og:title" content="PT. Eraya Digital Solusindo | Solusi Digital untuk Bisnis Anda">
+<meta property="og:description" content="Dukung pertumbuhan bisnis, UMKM, startup, dan konsultan pajak dengan solusi digital terbaik dari PT. Eraya Digital Solusindo.">
+<meta property="og:image" content="https://erayadigital.co.id/template_v1/img/logo/logo_eds_color.png">
+<meta property="og:url" content="https://erayadigital.co.id">
 
 <!-- Mobile Specific Metas -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,9 +22,7 @@
 ============================== -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 
 <!--==============================

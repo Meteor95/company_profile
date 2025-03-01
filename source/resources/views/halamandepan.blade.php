@@ -15,7 +15,7 @@ Mobile Menu
                     <a href="{{ url('') }}">Beranda</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">Forum</a>
+                    <a href="https://forum.erayadigital.co.id">Forum</a>
                 </li>
                 <li class="menu-item-has-children">
                     <a href="javascript:void(0)">Layanan</a>
@@ -34,7 +34,7 @@ Mobile Menu
 </div>
 <!--==============================
     Preloader
-==============================-->
+==============================
 <div class="preloader">
     <button class="vs-btn preloaderCls">Tampilkan Website Sekarang</button>
     <div class="preloader-inner text-center">
@@ -42,7 +42,7 @@ Mobile Menu
         <span class="loader"></span>
     </div>
 </div>
-<!--==============================
+==============================
 Sidemenu
 ============================== -->
 <div class="sidemenu-wrapper d-none d-lg-block">
@@ -123,7 +123,7 @@ Header Area
                                                     <a href="{{ url('') }}">Beranda</a>
                                                 </li>
                                                 <li>
-                                                    <a href="javascript:void(0)">Forum</a>
+                                                    <a href="https://forum.erayadigital.co.id">Forum</a>
                                                 </li>
                                                 <li class="menu-item-has-children">
                                                     <a href="javascript:void(0)">Layanan</a>
