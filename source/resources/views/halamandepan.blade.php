@@ -1,168 +1,6 @@
 @extends('templatebody')
 @section('konten_utama')
 <!--==============================
-Mobile Menu
-============================== -->
-<div class="vs-menu-wrapper">
-    <div class="vs-menu-area text-center">
-        <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
-        <div class="mobile-logo">
-            <a href="{{ url('') }}"><img src="{{ asset('template_v1/img/logo/logo_eds_color.png') }}" alt="Logo Eraya Digital Solusindo"></a>
-        </div>
-        <div class="vs-mobile-menu">
-            <ul>
-                <li>
-                    <a href="{{ url('') }}">Beranda</a>
-                </li>
-                <li>
-                    <a href="https://forum.erayadigital.co.id">Forum</a>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="javascript:void(0)">Layanan</a>
-                    <ul class="sub-menu">
-                        <li><a href="javascript:void(0)">Pengembangan Aplikasi</a></li>
-                        <li><a href="javascript:void(0)">Konsultasi Pajak dan Akuntansi</a></li>
-                        <li><a href="javascript:void(0)">Konsultasi Perangkat Keras atau Lunak</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">Hubungi Kami</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!--==============================
-    Preloader
-==============================
-<div class="preloader">
-    <button class="vs-btn preloaderCls">Tampilkan Website Sekarang</button>
-    <div class="preloader-inner text-center">
-        <img src="{{ asset('template_v1/img/logo/logo_eds_color.png') }}" alt="Logo Eraya Digital Solusindo">
-        <span class="loader"></span>
-    </div>
-</div>
-==============================
-Sidemenu
-============================== -->
-<div class="sidemenu-wrapper d-none d-lg-block">
-    <div class="sidemenu-content">
-        <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
-        <div class="widget  ">
-            <div class="vs-widget-about">
-                <div class="footer-logo">
-                <a href="{{ url('') }}"><img src="{{ asset('template_v1/img/logo/logo_eds_color.png') }}" alt="Logo Eraya Digital Solusindo"></a>
-                </div>
-                <p class="footer-text" style="text-align:justify">Didirikan pada tahun 2024, kami adalah software house profesional yang berpengalaman dalam menyediakan solusi Digital dan TI untuk berbagai organisasi. Kami telah melayani banyak klien di seluruh Indonesia, mulai dari UKM, perusahaan besar, hingga instansi pemerintah. Dengan semangat dan ketajaman intuisi, kami membantu pertumbuhan bisnis secara optimal dan berkelanjutan.</p>
-                <div class="info-social style3">
-                    <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="icon-btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="icon-btn" href="#"><i class="fab fa-google"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--==============================
-Header Area
-==============================-->
-<header class="vs-header header-layout2">
-    <div class="header-top">
-        <div class="container">
-            <div class="header-bg">
-                <div class="row justify-content-between">
-                    <div class="col-auto">
-                        <div class="header-links">
-                            <ul>
-                                <li><i class="fas fa-tv"></i>IP KAMU : {{$ip}}</li>
-                                <li><i class="fas fa-map-marker-alt"></i><a href="mailto:info@example.com">LOKASI KAMU : {{$location}}</a></li>
-                                <li><i class="fas fa-shield-check"></i>STATUS KAMU : TAMU</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="header-right">
-                            <div class="header-links ps-0">
-                                <div class="social-style1">
-                                    <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
-                                    <a href="javascript:void(0)"><i class="fab fa-youtube"></i></a>
-                                </div>
-                                <ul>
-                                    <li><a href="javascript:void(0)"><i class="fa-solid fa-user"></i>DAFTAR</a></li>
-                                    <li><a href="javascript:void(0)"><i class="fa-solid fa-lock"></i>MASUK</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="sticky-wrapper">
-        <div class="sticky-active">
-            <div class="container">
-                <div class="menu-bg">
-                    <div class="row position-relative align-items-center">
-                        <div class="col-auto">
-                            <div class="header-logo">
-                                <a href="{{ url('') }}">
-                                    <img style="width: 200px" src="{{ asset('template_v1/img/logo/logo_eds_color.png') }}" alt="Logo Eraya Digital Solusindo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="menu-area">
-                                <div class="row align-items-center justify-content-between">
-                                    <div class="col">
-                                        <nav class="main-menu menu-style1 d-none d-lg-block">
-                                            <ul>
-                                                <li>
-                                                    <a href="{{ url('') }}">Beranda</a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://forum.erayadigital.co.id">Forum</a>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="javascript:void(0)">Layanan</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="javascript:void(0)">Pengembangan Aplikasi</a></li>
-                                                        <li><a href="javascript:void(0)">Konsultasi Pajak dan Akuntansi</a></li>
-                                                        <li><a href="javascript:void(0)">Konsultasi Perangkat Keras atau Lunak</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0)">Hubungi Kami</a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <div class="col-auto d-lg-none">
-                                        <button class="vs-menu-toggle d-inline-block">
-                                            <i class="fal fa-bars"></i>
-                                        </button>
-                                    </div>
-                                    <div class="col-auto d-xl-block d-none">
-                                        <div class="header-icons">
-                                            <a href="#" class="icon-btn sideMenuToggler"><i
-                                                    class="fa-solid fa-bars"></i></a>
-                                            <a href="#" class="icon-btn">
-                                                <i class="fa-solid fa-globe"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<!--==============================
 Hero Area
 ============================== -->
 <div class="hero-layout1 style2" data-bg-src="{{ asset('template_v1/img/hero/hero-bg-2-1.jpg') }}">
@@ -246,9 +84,6 @@ Hero Area
         <div class="meteor-15"></div>
     </div>
 </div>
-<!--==============================
-Process Area
-============================== -->
 <div class="process-layout2">
     <div class="container-style2">
         <div class="process-style2">
@@ -345,9 +180,6 @@ Process Area
         </div>
     </div>
 </div>
-<!--==============================
-About Area
-============================== -->
 <section class="about-layout2 space-bottom">
     <div class="container wow fadeInUp wow-animated" data-wow-delay="0.3s">
         <div class="row gx-60 gy-5 align-items-center">
@@ -404,10 +236,7 @@ About Area
         </div>
     </div>
 </section>
-<!--==============================
-Service Area
-============================== -->
-<section class="service-layout1 service-space space-bottom">
+<section id="layanan_kami" class="service-layout1 service-space space-bottom">
     <div class="container wow fadeInUp wow-animated" data-wow-delay="0.3s">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -424,11 +253,13 @@ Service Area
                 <div class="service-wrap">
                     <div class="service-style1">
                         <div class="service-body">
+                            <a href="{{ route('layanan.email') }}">
                             <img src="{{ asset('template_v1/img/icon/mail_server.svg') }}" alt="icon">
-                            <h2 class="service-title h6 text-center"><a href="javascript:void(0)">Mail Server</a></h2>
+                            <h2 class="service-title h6 text-center" style="color:white">Mail Server</h2>
                             <p class="service-text text-center">
                                 Ingin membuat nema email kamu atau perusahaanmu menjadi profesional  dengan cepat dan aman seperti ini namakamu@namaperusahaan.co.id.
                             </p>
+                            </a>
                         </div>
                         <a href="service-details.html" class="icon-btn"><i
                                 class="fa-regular fa-arrow-right"></i></a>
@@ -538,9 +369,6 @@ Service Area
         </div>
     </div>
 </section>
-<!--==============================
-Video Area
-============================== -->
 <section class="video-layout1 video-space space-top" data-bg-src="{{ asset('template_v1/img/bg/video-bg2.jpg') }}">
     <div class="container position-relative wow fadeInUp wow-animated" data-wow-delay="0.3s">
         <div class="cta-style1">
@@ -569,9 +397,6 @@ Video Area
         </div>
     </div>
 </section>
-<!--==============================
-team Area
-============================== -->
 <section class="team-layout2 team-space" style="padding-bottom:100px">
     <div class="container position-relative">
         <div class="row justify-content-between align-items-center">
@@ -702,135 +527,6 @@ team Area
         </div>
     </div>
 </section>
-<!--==============================
-Faq Area
-============================== 
-<section class="faq-layout1 bg-body2 space-bottom">
-    <div class="container wow fadeInUp wow-animated" data-wow-delay="0.3s">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="title-area text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
-                    <span class="sec-subtitle">FAQS</span>
-                    <h2 class="sec-title">Frequently Asked Any Questions Us </h2>
-                </div>
-            </div>
-        </div>
-        <div class="row gy-5 gx-60">
-            <div class="col-lg-8">
-                <div class="accordion accordion-style1" id="faqVersion1">
-                    <div class="accordion-item">
-                        <div class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What
-                                is a VPN and how does it work?</button>
-                        </div>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#faqVersion1">
-                            <div class="accordion-body">
-                                <p>VEEPN provides enhanced security, privacy, and unrestricted internet access. With
-                                    our advanced encryption,
-                                    no-logs policy, and global server network, you can browse securely and bypass
-                                    geo-restrictions with ease.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Where can I get some?
-                            </button>
-                        </div>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#faqVersion1">
-                            <div class="accordion-body">
-                                <p>Yes, despite the removal of Government Feed-in Tariff, installs have been
-                                    forecast to
-                                    continue at the current rate and even increase in 2025.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Will VEEPN slow down my internet connection?
-                            </button>
-                        </div>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#faqVersion1">
-                            <div class="accordion-body">
-                                <p>Yes, despite the removal of Government Feed-in Tariff, installs have been
-                                    forecast to
-                                    continue at the current rate and even increase in 2025.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Where can I get some?
-                            </button>
-                        </div>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                            data-bs-parent="#faqVersion1">
-                            <div class="accordion-body">
-                                <p>Yes, despite the removal of Government Feed-in Tariff, installs have been
-                                    forecast to
-                                    continue at the current rate and even increase in 2025.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header" id="headingFive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                What if I have issues with my VPN connection?
-                            </button>
-                        </div>
-                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                            data-bs-parent="#faqVersion1">
-                            <div class="accordion-body">
-                                <p>VEEPN provides enhanced security, privacy, and unrestricted internet access. With
-                                    our advanced encryption,
-                                    no-logs policy, and global server network, you can browse securely and bypass
-                                    geo-restrictions with ease..
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header" id="headingSix">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                How do I set up VEEPN?
-                            </button>
-                        </div>
-                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                            data-bs-parent="#faqVersion1">
-                            <div class="accordion-body">
-                                <p>VEEPN provides enhanced security, privacy, and unrestricted internet access. With
-                                    our advanced encryption,
-                                    no-logs policy, and global server network, you can browse securely and bypass
-                                    geo-restrictions with ease.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="faq-img">
-                    <img src="{{asset('template_v1/img/default/faq-img1.png')}}" alt="faq">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>-->
-<!--==============================
-Blog  Area
-==============================-->
 <section class="vs-blog-wrapper blog-layout2 bg-title space">
     <div class="container z-index1 wow fadeInUp wow-animated" data-wow-delay="0.3s">
         <div class="row justify-content-between align-items-center">
@@ -1095,124 +791,6 @@ Blog  Area
     <div id="process-particle2" style="bottom: 0%; right: 0%; width: 30%; height: 50%; z-index: 0;"><canvas
             class="particles-js-canvas-el"></canvas></div>
 </section>
-<!--==============================
-Footer Area
-==============================-->
-<footer class="footer-wrapper  footer-layout1" data-bg-src="{{asset('template_v1/img/bg/footer-bg-1-1.jpg')}}">
-    <div class="container">
-        <div class="footer-top">
-            <div class="row g-5 justify-content-lg-between justify-content-center align-items-center">
-                <div class="col-xl-5 col-lg-4">
-                    <div class="footer-logo">
-                        <a href="{{ url('') }}"><img style="width: 300px;" src="{{ asset('template_v1/img/logo/logo_eds_color.png') }}" alt="Logo Eraya Digital Solusindo"></a>
-                    </div>
-                </div>
-                <div class="col-xl-7 col-lg-8">
-                    <div class="widget widget_newsletter footer-widget">
-                        <div class="newsletter1">
-                            <div class="newsletter-inner">
-                                <span class="newsletter-icon"><img src="{{asset('template_v1/img/icon/envlope1.png')}}"
-                                        alt="icon"></span>
-                                <h4 class="newsletter_title h5">Subscribe Newsletter</h4>
-                            </div>
-                            <form class="newsletter-form">
-                                <div class="search-btn">
-                                    <input class="form-control" type="email" placeholder="Enter your email....">
-                                    <button type="submit" class="vs-btn2">Subscribe</button>
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="widget-area">
-        <div class="container">
-            <div class="row g-5 justify-content-center">
-                <div class="col-xl-4 col-md-6">
-                    <div class="widget footer-widget">
-                        <div class="vs-widget-about">
-                            <h3 class="widget_title">Sekilas Mengenai Kami</h3>
-                            <p class="footer-text">Didirikan pada tahun 2024, kami adalah software house profesional yang berpengalaman dalam menyediakan solusi Digital dan TI untuk berbagai organisasi. Kami telah melayani banyak klien di seluruh Indonesia, mulai dari UKM, perusahaan besar, hingga instansi pemerintah. Dengan semangat dan ketajaman intuisi, kami membantu pertumbuhan bisnis secara optimal dan berkelanjutan.</p>
-                            <div class="footer-social">
-                                <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="icon-btn" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="icon-btn" href="#"><i class="fa-brands fa-behance"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-8 col-md-6">
-                    <div class="widget footer-widget">
-                        <h3 class="widget_title">Office Maps</h3>
-                        <div class="footer-map">
-                        <iframe  title="office location map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0241718589114!2d106.82590461135096!3d-6.2605461937018365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f37d942851e3%3A0xe99ce2e714d0a5!2sPT.SAID%20KRAMA%20YUDHA!5e0!3m2!1sid!2sid!4v1730714088653!5m2!1sid!2sid" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div class="row">
-                        <div class="col-md-6">
-                                <div class="media-style1">
-                                    <div class="media-icon icon-btn"><i class="fa-solid fa-map-location-dot"></i></div>
-                                    <div class="media-body">
-                                        <h3 class="media-title">[Head Office Address] Gedung Graha Krama Yudha Lt. 4 Unit B Jl. Hj. Tutty Alawiyah no. 43, Kel. Duren Tiga, Kec. Pancoran DKI Jakarta - Jakarta Selatan 12760</h3>
-                                    </div>
-                                </div>
-                                <div class="media-style1">
-                                    <div class="media-icon icon-btn"><i class="fa-solid fa-map-location-dot"></i></div>
-                                    <div class="media-body">
-                                        <h3 class="media-title">[Branch Office Address] Jl. Tarupala Gang 2 No 2 RT 24 RW 04 Kec. Pakisaji, Keluaran Kebonagung, Kabupaten Malang, Jawa Timur 65165</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="widget footer-widget">
-                                    <div class="media-style1">
-                                        <div class="media-icon icon-btn"><i class="fa-solid fa-phone"></i></div>
-                                        <div class="media-body">
-                                            <h3 class="media-title">Phone or Chat No:</h3>
-                                            <p class="media-info"><a href="tel:+6281945112427">(+62)819-4511-2427 (Agung)</a></p>
-                                            <p class="media-info"><a href="tel:+6285799663331">(+62)857-9966-3331 (Erfan)</a></p>
-                                            <p class="media-info"><a href="tel:+6282557808535">(+62)825-5780-8535 (Aries)</a></p>
-                                            <p class="media-info"><a href="tel:+6282233641442">(+62)822-3364-1442 (Ryan)</a></p>
-                                        </div>
-                                    </div>
-                                    <div class="media-style1">
-                                        <div class="media-icon icon-btn"><i class="fa-solid fa-envelope"></i></div>
-                                        <div class="media-body">
-                                            <h3 class="media-title">Email Address:</h3>
-                                            <p class="media-info"><a href="mailto:hallo@erayadigital.co.id">hallo@erayadigital.co.id</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="copyright-wrap">
-            <div class="row g-2 justify-content-lg-between justify-content-center align-items-center">
-                <div class="col-auto">
-                    <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 - <?php echo date("Y") ?> <a
-                            href="{{ url('') }}">PT. Eraya Digital Solusindo</a></p>
-                </div>
-                <div class="col-auto">
-                    <div class="copyright-menu">
-                        <ul class="list-unstyled">
-                            <li><a href="javascript:void(0)">Privacy Policy</a></li>
-                            <li><a href="javascript:void(0)">Terms & Conditions </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 @endsection
 @section('css_load')
 <link rel="stylesheet" href="{{ asset('template_v1/sass/template/meteor.css') }}">
