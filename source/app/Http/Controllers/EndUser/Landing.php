@@ -33,4 +33,10 @@ class Landing extends Controller
         $data['use_footer'] = false;
         return view('halamanemailprofesional', $data);
     }
+    public function hubungi_kami()
+    {
+        $data['info_location'] = $this->get_info_location();
+        $data['use_footer'] = true;
+        return view('hubungikami', $data);
+    }
 }

@@ -16,7 +16,7 @@
                     <a href="{{ url('/#layanan_kami') }}">Layanan</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">Hubungi Kami</a>
+                    <a href="{{ route('layanan.hubungi_kami') }}">Hubungi Kami</a>
                 </li>
             </ul>
         </div>
@@ -103,7 +103,7 @@
                                                     <a href="{{ url('/#layanan_kami') }}">Layanan</a>
                                                 </li>
                                                 <li>
-                                                    <a href="javascript:void(0)">Hubungi Kami</a>
+                                                    <a href="{{ route('layanan.hubungi_kami') }}">Hubungi Kami</a>
                                                 </li>
                                             </ul>
                                         </nav>
