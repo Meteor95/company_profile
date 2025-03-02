@@ -72,3 +72,10 @@ if [ $? -eq 0 ]; then
 else
 	echo "Deployment failed. Please check the logs."
 fi
+# Tunggu sampai container Laravel siap
+echo "Waiting for Laravel to be ready..."
+sleep 10
+# Jalankan migrasi di dalam container
+echo "Running migrations..."
+sudo docker exec -it $(sudo docker ps --filter "name=${DOCKER_SWARM_STACK_NAME}_app" -q) php artisan migrate --force
+
